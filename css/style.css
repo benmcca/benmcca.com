@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+nav.navbar {
+    background-color: #151213;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
