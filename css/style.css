@@ -1,12 +1,60 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: black;
     color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav.navbar {
-    background-color: #151213;
-    padding: 0;
+    background-color: black;
     position: sticky;
+    padding-left: 80px;
+    padding-top:15px;
     top: 0;
     z-index: 100;
+    display: flex;
+}
+
+.navItem {
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: filter 0.3s ease;
+    text-align: center;
+}
+
+.navItem img {
+    padding: 15px;
+    margin: 0 auto; 
+}
+
+.navItem img:hover {
+    filter: sepia(100%) saturate(350%);
+}
+
+.home-container {
+    height: 100vh; /* Viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+.centered-content img {
+    max-width: 40%;
+    height: auto;
+}
+
+.content-container {
+    /* margin-top: 100vh; Adjust the margin to control when the content becomes visible */
+    padding: 20px;
 }
