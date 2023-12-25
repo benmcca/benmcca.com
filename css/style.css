@@ -1,21 +1,9 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    
+    background-color: black;
     color: white;
     font-family: 'Work Sans', sans-serif;
-}
-
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for the opacity (0 to 1) */
-    z-index: -1;
 }
 
 a {
@@ -49,7 +37,7 @@ nav.navbar {
 }
 
 .home-container {
-    height: 100vh; /* Viewport height */
+    height: 70vh; /* Viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,14 +76,33 @@ nav.navbar {
 .about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 80px;
     margin-top: 2em;
     margin-left: 5em;
     margin-right: 5em;
 }
 
+.about-picture {
+    max-width: 100%;
+    max-height: 100%;
+    transform: rotate(-2deg);
+}
+
+.about-text span {
+    color: rgb(255, 253, 122);
+    cursor: pointer;
+}
+
+.skills-section {
+    margin-top: 5em;
+}
+
 .skills-section .skills-section-logo {
     width: 450px;
+}
+
+.tool-logos img {
+    height: 150px;
 }
 
 .contact-section .contact-section-logo {
