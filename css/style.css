@@ -105,6 +105,29 @@ nav.navbar {
     height: 150px;
 }
 
+.experience-section row {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    min-height: 10vh;
+}
+
+.experience-section sectionTitle {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: right;
+    border-right: 1px solid white;
+    background-color: grey;
+}
+
+.experience-section sectionText {
+    padding-left: 30px;
+    padding-right: 150px;
+    background-color: chocolate;
+}
+
 .contact-section .contact-section-logo {
     width: 500px;
 }
