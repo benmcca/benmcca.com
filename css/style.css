@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'helvetica';
+    src: url('path/to/your/font.otf') format('opentype');
+}
+
 body, html {
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'helvetica', sans-serif;
 }
 
 a {
@@ -30,6 +35,7 @@ nav.navbar {
 .navItem img {
     padding: 15px;
     margin: 0 auto; 
+    cursor: pointer;
 }
 
 .navItem img:hover {
@@ -105,29 +111,99 @@ nav.navbar {
     height: 150px;
 }
 
-.experience-section row {
+.experience-section {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
     min-height: 10vh;
 }
 
 .experience-section sectionTitle {
     font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 20px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: right;
     border-right: 1px solid white;
-    background-color: grey;
 }
 
 .experience-section sectionText {
     padding-left: 30px;
     padding-right: 150px;
-    background-color: chocolate;
 }
+
+.experience-section .school {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.experience-section .degree {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.experience-section .degree .grad{
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(222, 222, 222);
+}
+
+.positionName {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.positionName .company {
+    font-size: 18px;
+    color: rgb(226, 226, 226);
+    font-style: italic;
+}
+
+.positionName .date {
+    color: rgb(205, 205, 205);
+    font-size: 15px;
+    font-style: italic;
+}
+
+.detailsList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.detailsList li {
+    padding-left: 20px; /* Space for the list item marker */
+    background: url('/img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
+    background-size: 14px 14px; /* Set the size of the background image */
+    margin-bottom: 8px; /* Add some bottom margin for spacing between items */
+}
+
 
 .contact-section .contact-section-logo {
     width: 500px;
+}
+
+.contactLinks {
+    display: flex;
+}
+
+.contactLinks a {
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.contactLinks a:hover {
+    filter: sepia(100%) saturate(500%);
 }
