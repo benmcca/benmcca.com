@@ -13,6 +13,11 @@ body, html {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
 }
 
 nav.navbar {
@@ -69,6 +74,13 @@ nav.navbar {
     height: auto;
 }
 
+.centered-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 .content-container {
     padding: 8em;
     background: url('/img/background.png') repeat center center;
@@ -121,9 +133,25 @@ nav.navbar {
     padding: 50px;
 }
 
-.tool-logos img {
+.logo-item img {
     max-height: 200px;
     max-width: 200px;
+    transition: transform 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+.logo-item .hover-text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    position: relative;
+    bottom: -130px; /* Adjust the distance from the image as needed */
+    left: -30%;
+    opacity: 0;
+    transition: opacity 0.2s linear; /* Adjust the duration and easing as needed */
+}
+
+.logo-item:hover .hover-text {
+    opacity: 1;
 }
 
 .experience-section {
@@ -227,11 +255,13 @@ nav.navbar {
 
 .contactLinks {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
 }
 
 .contactLinks a {
-    margin-top: 40px;
-    margin-right: 40px;
     font-size: 40px;
     font-weight: bold;
     font-style: italic;

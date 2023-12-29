@@ -108,3 +108,32 @@ if (yoyoKeyword) {
         aboutPicture.style.transform = 'rotate(-2deg)';
     });
 }
+
+function getRandomRotation(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function rotateImageRandomly(imageElement) {
+    const randomRotation = getRandomRotation(-12, 12);
+    imageElement.style.transform = `rotate(${randomRotation}deg) scale(1.0)`;
+}
+
+function resetRotation(imageElement) {
+    imageElement.style.transform = 'rotate(0deg) scale(1.1)';
+}
+
+const logoItems = document.querySelectorAll('.logo-item img');
+
+logoItems.forEach(image => {
+    rotateImageRandomly(image);
+
+    // Add event listener for hover
+    image.addEventListener('mouseenter', function () {
+        resetRotation(this);
+    });
+
+    // Add event listener for mouse leave (optional: reset rotation when mouse leaves the image)
+    image.addEventListener('mouseleave', function () {
+        rotateImageRandomly(this);
+    });
+});
