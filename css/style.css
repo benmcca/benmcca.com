@@ -107,16 +107,79 @@ nav.navbar {
     width: 450px;
 }
 
+.tool-logos {
+    position: relative;
+    height: auto;
+}
+
 .tool-logos img {
-    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    position: absolute;
+}
+
+.tool-logos .js {
+    top: 10vh;
+    left: 20vw;
+}
+
+.tool-logos .python {
+    top: 15vh;
+    left: 60vw;
+}
+
+.tool-logos .react {
+    top: 20vh;
+    left: 40vw;
+}
+
+.tool-logos .css {
+    top: 35vh;
+    left: 25vw;
+}
+
+.tool-logos .html {
+    top: 32vh;
+    left: 52vw;
+}
+
+.tool-logos .cpp {
+    top: 55vh;
+    left: 16vw;
+}
+
+.tool-logos .java {
+    top: 53vh;
+    left: 38vw;
+}
+
+.tool-logos .php {
+    top: 55vh;
+    left: 58vw;
 }
 
 .experience-section {
+    margin-top: 100vh;
+}
+
+.experience-section .experience-section-logo {
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+.resume-button {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.experience-section .experience-text{
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: auto auto;
     grid-row-gap: 40px;
-    min-height: 10vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
 }
 
 .experience-section sectionTitle {
@@ -132,7 +195,6 @@ nav.navbar {
 
 .experience-section sectionText {
     padding-left: 30px;
-    padding-right: 150px;
 }
 
 .experience-section .school {
@@ -171,6 +233,7 @@ nav.navbar {
     color: rgb(205, 205, 205);
     font-size: 15px;
     font-style: italic;
+    padding-top: 2px;
 }
 
 .detailsList {
@@ -186,6 +249,9 @@ nav.navbar {
     margin-bottom: 8px; /* Add some bottom margin for spacing between items */
 }
 
+.contact-section {
+    margin-top: 5vh;
+}
 
 .contact-section .contact-section-logo {
     width: 500px;
