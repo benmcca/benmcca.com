@@ -108,62 +108,30 @@ nav.navbar {
 }
 
 .tool-logos {
-    position: relative;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 .tool-logos img {
-    max-height: 150px;
-    max-width: 150px;
-    position: absolute;
-}
-
-.tool-logos .js {
-    top: 10vh;
-    left: 20vw;
-}
-
-.tool-logos .python {
-    top: 15vh;
-    left: 60vw;
-}
-
-.tool-logos .react {
-    top: 20vh;
-    left: 40vw;
-}
-
-.tool-logos .css {
-    top: 35vh;
-    left: 25vw;
-}
-
-.tool-logos .html {
-    top: 32vh;
-    left: 52vw;
-}
-
-.tool-logos .cpp {
-    top: 55vh;
-    left: 16vw;
-}
-
-.tool-logos .java {
-    top: 53vh;
-    left: 38vw;
-}
-
-.tool-logos .php {
-    top: 55vh;
-    left: 58vw;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .experience-section {
-    margin-top: 100vh;
+    margin-top: 15vh;
 }
 
 .experience-section .experience-section-logo {
-    width: 700px;
+    width: 750px;
     margin-bottom: 10px;
 }
 
