@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('.navItem').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetSectionId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetSectionId);
+
+            if (targetSection) {
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - navbarHeight,
+                    behavior: 'smooth',
+                });
+            }
+        });
+    });
+});
+
 // Get references to the elements
 const aboutPicture = document.getElementsByClassName('about-picture')[0];
 const meSrc = 'img/aboutme/me.jpg';
