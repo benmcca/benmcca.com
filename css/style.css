@@ -23,7 +23,7 @@ a:visited {
 nav.navbar {
     background-color: black;
     position: sticky;
-    padding-left: 80px;
+    padding-left: 15px;
     padding-top:15px;
     top: 0;
     z-index: 100;
@@ -87,6 +87,10 @@ nav.navbar {
     background-size: cover;
 }
 
+.about-section {
+    min-height: 80vh;
+}
+
 .about-section .about-section-logo {
     width: 700px;
 }
@@ -101,6 +105,7 @@ nav.navbar {
 }
 
 .about-picture {
+    margin-top: 5vh;
     max-width: 100%;
     max-height: 100%;
     transform: rotate(-2deg);
