@@ -44,7 +44,7 @@ nav.navbar {
 }
 
 .navItem img:hover {
-    filter: sepia(100%) saturate(500%);
+    filter: sepia(100%) saturate(600%);
 }
 
 .home-container {
@@ -78,7 +78,7 @@ nav.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
 }
 
 .content-container {
@@ -109,6 +109,10 @@ nav.navbar {
     max-width: 100%;
     max-height: 100%;
     transform: rotate(-2deg);
+}
+
+.about-text {
+    font-size: 18px;
 }
 
 .about-text span {
@@ -169,9 +173,16 @@ nav.navbar {
 }
 
 .resume-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: underline;
+    font-style: italic;
+}
+
+.resume-button:hover {
+    filter: sepia(100%) saturate(600%);
 }
 
 .experience-section .experience-text{
@@ -274,5 +285,5 @@ nav.navbar {
 }
 
 .contactLinks a:hover {
-    filter: sepia(100%) saturate(500%);
+    filter: sepia(100%) saturate(600%);
 }
