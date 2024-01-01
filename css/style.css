@@ -370,6 +370,15 @@ nav.navbar {
         width: 90vw;
     }
 
+    .resume-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
     .experience-section {
         margin-top: 5vh;
     }
@@ -382,12 +391,14 @@ nav.navbar {
         grid-row-gap: 10px;
         margin-left: 0vh;
         margin-right: 0vh;
+        margin-top: 0vh;
     }
 
     .experience-section sectionTitle {
         font-size: 24px;
         padding: 0px;
         padding-left: 8px;
+        padding-top: 15px;
         text-align: left;
         border-right: 0px solid white;
         border-bottom: 1px solid white;
@@ -445,22 +456,16 @@ nav.navbar {
     }
 
     .contact-section {
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
     
     .contactLinks {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        padding-top: 40px;
+        gap: 20px;
+        padding-top: 20px;
     }
     
     .contactLinks a {
-        font-size: 40px;
-        font-weight: bold;
-        font-style: italic;
-        cursor: pointer;
+        font-size: 4.5vw;
     }
     
     .contactLinks a:hover {
