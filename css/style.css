@@ -55,6 +55,10 @@ nav.navbar {
     background-color: black;
 }
 
+.home-arrow {
+    height: 20vh; /* Viewport height */
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -70,7 +74,7 @@ nav.navbar {
   }
 
 .centered-content img {
-    max-width: 40%;
+    max-width: 40vw;
     height: auto;
 }
 
@@ -92,7 +96,7 @@ nav.navbar {
 }
 
 .about-section .about-section-logo {
-    width: 700px;
+    width: 45vw;
 }
 
 .about-content {
@@ -125,7 +129,7 @@ nav.navbar {
 }
 
 .skills-section .skills-section-logo {
-    width: 450px;
+    width: 30vw;
 }
 
 .tool-logos {
@@ -143,8 +147,8 @@ nav.navbar {
 }
 
 .logo-item img {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 20vh;
+    max-width: 20vh;
     transition: transform 0.3s ease; /* Adjust the duration and easing as needed */
 }
 
@@ -168,7 +172,7 @@ nav.navbar {
 }
 
 .experience-section .experience-section-logo {
-    width: 750px;
+    width: 50vw;
     margin-bottom: 10px;
 }
 
@@ -266,7 +270,7 @@ nav.navbar {
 }
 
 .contact-section .contact-section-logo {
-    width: 500px;
+    width: 30vw;
 }
 
 .contactLinks {
@@ -286,4 +290,185 @@ nav.navbar {
 
 .contactLinks a:hover {
     filter: sepia(100%) saturate(600%);
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide (e.g., phones) */
+    .centered-content img {
+        max-width: 75vw;
+    }
+
+    .content-container {
+        padding: 2em;
+        background: url('/img/background.png') repeat center center;
+        background-size: cover;
+    }
+
+    .about-section .about-section-logo {
+        width: 80vw;
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        margin-top: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    
+    .about-picture {
+        margin-top: 2vh;
+        max-width: 100%;
+        max-height: 100%;
+        transform: rotate(-2deg);
+    }
+    
+    .about-text {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .skills-section .skills-section-logo {
+        width: 60vw;
+    }
+
+    .skills-section {
+        margin-top: 5vh;
+    }
+    
+    .tool-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95vw;
+        grid-gap: 10px;
+        margin-top: 2vh;
+    }
+    
+    .logo-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        background-color: rgb(86, 86, 86);
+    }
+    
+    .logo-item img {
+        max-height: 20vh;
+        max-width: 20vw;
+    }
+    
+    .logo-item .hover-text {
+        font-size: 0px;
+        position: relative;
+        bottom: -7vh; /* Adjust the distance from the image as needed */
+        left: -30%;
+    }
+    
+    .experience-section .experience-section-logo {
+        width: 90vw;
+    }
+
+    .experience-section {
+        margin-top: 5vh;
+    }
+
+
+.resume-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.resume-button:hover {
+    filter: sepia(100%) saturate(600%);
+}
+
+.experience-section .experience-text{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+.experience-section sectionTitle {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: right;
+    border-right: 1px solid white;
+}
+
+.experience-section sectionText {
+    padding-left: 30px;
+}
+
+.experience-section .school {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.experience-section .degree {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.experience-section .degree .grad{
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(222, 222, 222);
+}
+
+.positionName {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.positionName .company {
+    font-size: 18px;
+    color: rgb(226, 226, 226);
+    font-style: italic;
+}
+
+.positionName .date {
+    color: rgb(205, 205, 205);
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 2px;
+}
+
+.detailsList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.detailsList li {
+    padding-left: 20px; /* Space for the list item marker */
+    background: url('/img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
+    background-size: 14px 14px; /* Set the size of the background image */
+    margin-bottom: 8px; /* Add some bottom margin for spacing between items */
+}
+
+    .contact-section .contact-section-logo {
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px wide (e.g., tablets) */
 }
