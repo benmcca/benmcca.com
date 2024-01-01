@@ -219,7 +219,7 @@ nav.navbar {
 }
 
 .experience-section .degree {
-    color: rgb(255, 255, 255);
+    color: rgb(222, 222, 222);
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
@@ -241,7 +241,7 @@ nav.navbar {
 
 .positionName .company {
     font-size: 18px;
-    color: rgb(226, 226, 226);
+    color: rgb(222, 222, 222);
     font-style: italic;
 }
 
@@ -375,97 +375,96 @@ nav.navbar {
     }
 
 
-.resume-button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-style: italic;
-}
+    .experience-section .experience-text{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 10px;
+        margin-left: 0vh;
+        margin-right: 0vh;
+    }
 
-.resume-button:hover {
-    filter: sepia(100%) saturate(600%);
-}
+    .experience-section sectionTitle {
+        font-size: 24px;
+        padding: 0px;
+        padding-left: 8px;
+        text-align: left;
+        border-right: 0px solid white;
+        border-bottom: 1px solid white;
+    }
 
-.experience-section .experience-text{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: auto auto;
-    grid-row-gap: 40px;
-    margin-left: 15vh;
-    margin-right: 15vh;
-}
+    .experience-section sectionText {
+        padding-left: 0px;
+    }
 
-.experience-section sectionTitle {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: right;
-    border-right: 1px solid white;
-}
+    .experience-section .school {
+        font-weight: bold;
+        font-size: 18px;
+    }
 
-.experience-section sectionText {
-    padding-left: 30px;
-}
+    .experience-section .degree {
+        color: rgb(222, 222, 222);
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 
-.experience-section .school {
-    font-weight: bold;
-    font-size: 20px;
-}
+    .positionName {
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
 
-.experience-section .degree {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+    .positionName .company {
+        font-size: 16px;
+        color: rgb(222, 222, 222);
+    }
 
-.experience-section .degree .grad{
-    font-weight: bold;
-    font-size: 16px;
-    font-style: italic;
-    color: rgb(222, 222, 222);
-}
+    .positionName .date {
+        color: rgb(205, 205, 205);
+        font-size: 14px;
+        padding-top: 2px;
+    }
 
-.positionName {
-    font-weight: bold;
-    font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    .detailsList {
+        list-style-type: none; /* Remove default list styles */
+        padding: 0;
+        padding-bottom: 15px;
+        margin: 0;
+    }
 
-.positionName .company {
-    font-size: 18px;
-    color: rgb(226, 226, 226);
-    font-style: italic;
-}
-
-.positionName .date {
-    color: rgb(205, 205, 205);
-    font-size: 15px;
-    font-style: italic;
-    padding-top: 2px;
-}
-
-.detailsList {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0;
-    margin: 0;
-}
-
-.detailsList li {
-    padding-left: 20px; /* Space for the list item marker */
-    background: url('/img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
-    background-size: 14px 14px; /* Set the size of the background image */
-    margin-bottom: 8px; /* Add some bottom margin for spacing between items */
-}
+    .detailsList li {
+        padding-left: 30px; /* Space for the list item marker */
+        background: url('/img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
+        background-size: 15px 15px; /* Set the size of the background image */
+        margin-bottom: 8px; /* Add some bottom margin for spacing between items */
+    }
 
     .contact-section .contact-section-logo {
         width: 60vw;
+    }
+
+    .contact-section {
+        margin-top: 10vh;
+    }
+    
+    .contactLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-top: 40px;
+    }
+    
+    .contactLinks a {
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+    }
+    
+    .contactLinks a:hover {
+        filter: sepia(100%) saturate(600%);
     }
 }
 
