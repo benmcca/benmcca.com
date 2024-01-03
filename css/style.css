@@ -53,6 +53,7 @@ a:visited {
     background-color: white;
     transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out, rotate 0.2s ease-in-out, translate 0.2s ease-in-out;
     transform-origin: left center;
+    border-radius: 0;
 }
 
 .hamburger-menu input {
@@ -90,7 +91,7 @@ a:visited {
     padding-top: 2rem;
     background-color: rgb(0, 0, 0);
     height: 5vh;
-    width: 100vw;
+    width: 95vw;
 } 
 
 .menubar a {
@@ -319,7 +320,7 @@ a:visited {
 
 .detailsList li {
     padding-left: 20px; /* Space for the list item marker */
-    background: url('/img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
+    background: url('../img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
     background-size: 14px 14px; /* Set the size of the background image */
     margin-bottom: 8px; /* Add some bottom margin for spacing between items */
 }
