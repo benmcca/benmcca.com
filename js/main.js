@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var navItems = document.querySelectorAll('.navItem');
+    var checkbox = document.getElementById('hamburgerCheckbox');
+
+    navItems.forEach(function (navItem) {
+        navItem.addEventListener('click', function (event) {
+            // Check if the click target is not the checkbox
+            if (event.target !== checkbox) {
+                // Unselect the checkbox
+                checkbox.checked = false;
+            }
+        });
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     // Smooth scrolling for anchor links
     document.querySelectorAll('.navItem').forEach(anchor => {
@@ -8,12 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetSectionId);
 
             if (targetSection) {
-                const navbarHeight = document.querySelector('.menubar').offsetHeight;
-
-                window.scrollTo({
-                    top: targetSection.offsetTop - navbarHeight,
-                    behavior: 'smooth',
-                });
+                if (window.innerWidth <= 768) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 60,
+                        behavior: 'smooth',
+                    });
+                }
+                else {
+                    const navbarHeight = document.querySelector('.menubar').offsetHeight;
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - navbarHeight,
+                        behavior: 'smooth',
+                    });
+                }
             }
         });
     });
