@@ -361,7 +361,7 @@ a:visited {
     .hamburger-menu {
         position: sticky;
         top: 0;
-        width: 100vw;
+        width: 93%;
         padding: 15px;
         background-color: rgb(0, 0, 0);
     }
@@ -430,10 +430,18 @@ a:visited {
     .skills-section {
         margin-top: 5vh;
     }
+
+    .tool-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     
     .tool-logos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        
         width: 95vw;
         grid-gap: 10px;
         margin-top: 2vh;
@@ -452,8 +460,8 @@ a:visited {
     }
     
     .logo-item .hover-text {
-        font-size: 0px;
         position: relative;
+        font-size: 0px;
         bottom: -7vh; /* Adjust the distance from the image as needed */
         left: -30%;
     }
