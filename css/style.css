@@ -538,7 +538,7 @@ a:visited {
     }
 
     .detailsList {
-        list-style-type: none; /* Remove default list styles */
+        /* list-style-type: none; */
         padding: 0;
         padding-bottom: 15px;
         margin: 0;
@@ -546,7 +546,7 @@ a:visited {
 
     .detailsList li {
         padding-left: 30px; /* Space for the list item marker */
-        background: url('/img/listIcon.jpg') no-repeat left center; /* Set custom image as background */
+        /* background: url('/img/listIcon.jpg') no-repeat left center; */
         background-size: 15px 15px; /* Set the size of the background image */
         margin-bottom: 8px; /* Add some bottom margin for spacing between items */
     }
