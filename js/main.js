@@ -1,10 +1,3 @@
-const hamburger = document.getElementsByClassName('hamburger')[0];
-const navbar = document.querySelector('.navbar');
-hamburger.addEventListener('click', () => {
-    navbar.classList.toggle('show-nav');
-});
-
-
 document.addEventListener("DOMContentLoaded", function () {
     // Smooth scrolling for anchor links
     document.querySelectorAll('.navItem').forEach(anchor => {
@@ -15,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetSectionId);
 
             if (targetSection) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const navbarHeight = document.querySelector('.menubar').offsetHeight;
 
                 window.scrollTo({
                     top: targetSection.offsetTop - navbarHeight,
@@ -33,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetSectionId);
 
             if (targetSection) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const navbarHeight = document.querySelector('.menubar').offsetHeight;
 
                 window.scrollTo({
                     top: targetSection.offsetTop - navbarHeight,
