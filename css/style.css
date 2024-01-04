@@ -391,11 +391,11 @@ a:visited {
     }
 
     .home-container {
-        height: 65vh; /* Viewport height */
+        height: 60vh; /* Viewport height */
     }
     
     .home-arrow {
-        height: 25vh; /* Viewport height */
+        height: 30vh; /* Viewport height */
     }
 
     .centered-content img {
