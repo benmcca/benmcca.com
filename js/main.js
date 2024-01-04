@@ -23,12 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetSectionId);
 
             if (targetSection) {
-                if (window.innerWidth <= 768) {
+                //for hamburger menu
+                if (window.innerWidth <= 1024) {
                     window.scrollTo({
                         top: targetSection.offsetTop - 60,
                         behavior: 'smooth',
                     });
                 }
+                //for nav bar
                 else {
                     const navbarHeight = document.querySelector('.menubar').offsetHeight;
                     
