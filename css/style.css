@@ -147,7 +147,7 @@ a:visited {
 
 .content-container {
     padding: 8em;
-    /* background: url('/img/background.png') repeat center center; */
+    background: url('/img/background.png') repeat center center;
     background-size: cover;
 }
 

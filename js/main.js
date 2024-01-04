@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const aboutPicture = document.getElementsByClassName('about-picture')[0];
 const meSrc = 'img/aboutme/me.jpg';
 const njitSrc = 'img/aboutme/njit.jpeg';
-const skateboardSrc = 'img/aboutme/skateboarding.jpg'
+const skateboardSrc = 'img/aboutme/skateboarding.JPG'
 const hikingSrc = 'img/aboutme/hiking.jpg'
 const yoyoSrc = 'img/aboutme/yoyoing.jpg'
 
