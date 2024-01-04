@@ -70,6 +70,10 @@ const njitSrc = 'img/aboutme/njit.jpeg';
 const skateboardSrc = 'img/aboutme/skateboarding.JPG'
 const hikingSrc = 'img/aboutme/hiking.jpg'
 const yoyoSrc = 'img/aboutme/yoyoing.jpg'
+const blondeSrc = 'img/aboutme/blonde.jpeg'
+const rodeoSrc = 'img/aboutme/rodeo.jpg'
+const whatSrc = 'img/aboutme/whatcouldpossiblygowrong.webp'
+const letsStartSrc = 'img/aboutme/letsstarthere.jpeg'
 
 // Add event listeners to each keyword
 const meKeyword = document.getElementsByClassName('me')[0];
@@ -77,6 +81,10 @@ const njitKeyword = document.getElementsByClassName('njit')[0];
 const skateboardKeyword = document.getElementsByClassName('skateboarding')[0];
 const hikingKeyword = document.getElementsByClassName('hiking')[0];
 const yoyoKeyword = document.getElementsByClassName('yoyo')[0];
+const blondeKeyword = document.getElementsByClassName('blonde')[0];
+const rodeoKeyword = document.getElementsByClassName('rodeo')[0];
+const whatKeyword = document.getElementsByClassName('what')[0];
+const letsKeyword = document.getElementsByClassName('lets')[0];
 
 if (meKeyword) {
     meKeyword.addEventListener('click', () => {
@@ -86,11 +94,6 @@ if (meKeyword) {
 }
 
 if (njitKeyword) {
-    njitKeyword.addEventListener('click', () => {
-        aboutPicture.src = njitSrc;
-        aboutPicture.style.transform = 'rotate(3deg)';
-    });
-    
     njitKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = njitSrc;
         aboutPicture.style.transform = 'rotate(1deg)';
@@ -103,11 +106,6 @@ if (njitKeyword) {
 }
 
 if (skateboardKeyword) {
-    skateboardKeyword.addEventListener('click', () => {
-        aboutPicture.src = skateboardSrc;
-        aboutPicture.style.transform = 'rotate(3deg)';
-    });
-    
     skateboardKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = skateboardSrc;
         aboutPicture.style.transform = 'rotate(3deg)';
@@ -120,11 +118,6 @@ if (skateboardKeyword) {
 }
 
 if (hikingKeyword) {
-    hikingKeyword.addEventListener('click', () => {
-        aboutPicture.src = hikingSrc;
-        aboutPicture.style.transform = 'rotate(2deg)';
-    });
-
     hikingKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = hikingSrc;
         aboutPicture.style.transform = 'rotate(2deg)';
@@ -137,17 +130,60 @@ if (hikingKeyword) {
 }
 
 if (yoyoKeyword) {
-    yoyoKeyword.addEventListener('click', () => {
-        aboutPicture.src = yoyoSrc;
-        aboutPicture.style.transform = 'rotate(4deg)';
-    });
-
     yoyoKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = yoyoSrc;
         aboutPicture.style.transform = 'rotate(4deg)';
     });
 
     yoyoKeyword.addEventListener('mouseout', () => {
+        aboutPicture.src = meSrc;
+        aboutPicture.style.transform = 'rotate(-2deg)';
+    });
+}
+
+if (blondeKeyword) {
+    blondeKeyword.addEventListener('mouseover', () => {
+        aboutPicture.src = blondeSrc;
+        aboutPicture.style.transform = 'rotate(2deg)';
+    });
+
+    blondeKeyword.addEventListener('mouseout', () => {
+        aboutPicture.src = meSrc;
+        aboutPicture.style.transform = 'rotate(-2deg)';
+    });
+}
+
+if (rodeoKeyword) {
+    rodeoKeyword.addEventListener('mouseover', () => {
+        aboutPicture.src = rodeoSrc;
+        aboutPicture.style.transform = 'rotate(4deg)';
+    });
+
+    rodeoKeyword.addEventListener('mouseout', () => {
+        aboutPicture.src = meSrc;
+        aboutPicture.style.transform = 'rotate(-2deg)';
+    });
+}
+
+if (whatKeyword) {
+    whatKeyword.addEventListener('mouseover', () => {
+        aboutPicture.src = whatSrc;
+        aboutPicture.style.transform = 'rotate(5deg)';
+    });
+
+    whatKeyword.addEventListener('mouseout', () => {
+        aboutPicture.src = meSrc;
+        aboutPicture.style.transform = 'rotate(-2deg)';
+    });
+}
+
+if (letsKeyword) {
+    letsKeyword.addEventListener('mouseover', () => {
+        aboutPicture.src = letsStartSrc;
+        aboutPicture.style.transform = 'rotate(3deg)';
+    });
+
+    letsKeyword.addEventListener('mouseout', () => {
         aboutPicture.src = meSrc;
         aboutPicture.style.transform = 'rotate(-2deg)';
     });
