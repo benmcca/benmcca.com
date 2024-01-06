@@ -120,7 +120,7 @@ if (skateboardKeyword) {
 if (hikingKeyword) {
     hikingKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = hikingSrc;
-        aboutPicture.style.transform = 'rotate(2deg)';
+        aboutPicture.style.transform = 'rotate(-3deg)';
     });
 
     hikingKeyword.addEventListener('mouseout', () => {
@@ -132,7 +132,7 @@ if (hikingKeyword) {
 if (yoyoKeyword) {
     yoyoKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = yoyoSrc;
-        aboutPicture.style.transform = 'rotate(4deg)';
+        aboutPicture.style.transform = 'rotate(-4deg)';
     });
 
     yoyoKeyword.addEventListener('mouseout', () => {
@@ -156,7 +156,7 @@ if (blondeKeyword) {
 if (rodeoKeyword) {
     rodeoKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = rodeoSrc;
-        aboutPicture.style.transform = 'rotate(4deg)';
+        aboutPicture.style.transform = 'rotate(-3deg)';
     });
 
     rodeoKeyword.addEventListener('mouseout', () => {
@@ -168,7 +168,7 @@ if (rodeoKeyword) {
 if (whatKeyword) {
     whatKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = whatSrc;
-        aboutPicture.style.transform = 'rotate(5deg)';
+        aboutPicture.style.transform = 'rotate(4deg)';
     });
 
     whatKeyword.addEventListener('mouseout', () => {
@@ -180,7 +180,7 @@ if (whatKeyword) {
 if (letsKeyword) {
     letsKeyword.addEventListener('mouseover', () => {
         aboutPicture.src = letsStartSrc;
-        aboutPicture.style.transform = 'rotate(3deg)';
+        aboutPicture.style.transform = 'rotate(-1deg)';
     });
 
     letsKeyword.addEventListener('mouseout', () => {
