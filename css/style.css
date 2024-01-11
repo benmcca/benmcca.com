@@ -9,7 +9,6 @@ body, html {
     background-color: black;
     color: white;
     font-family: 'helvetica', sans-serif;
-    overflow-x: hidden;
 }
 
 a {
