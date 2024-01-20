@@ -182,6 +182,22 @@ a:visited {
     font-size: 18px;
 }
 
+.about-headline {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.iconImg {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.iconImg:hover {
+    filter: sepia(100%) saturate(600%)
+}
+
 .about-text span {
     color: rgb(255, 253, 122);
     cursor: pointer;
