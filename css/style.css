@@ -414,11 +414,11 @@ a:visited {
     }
 
     .home-container {
-        height: 60vh; /* Viewport height */
+        height: 55vh; /* Viewport height */
     }
     
     .home-arrow {
-        height: 30vh; /* Viewport height */
+        height: 35vh; /* Viewport height */
     }
 
     .home-arrow video {
