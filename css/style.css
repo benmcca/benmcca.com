@@ -9,7 +9,6 @@ body, html {
     background-color: black;
     color: white;
     font-family: 'helvetica', sans-serif;
-    overflow-x: hidden;
 }
 
 a {
@@ -28,9 +27,12 @@ a:visited {
     --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2)
 }
 
-/* scrollbar styling */
+/* scrollbar styling for vertical scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
+    height: 100%; /* Ensure the vertical scrollbar covers the entire height */
+    overflow-y: auto; /* Ensure vertical scrollbar appears only when needed */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
   
 /* Track */
