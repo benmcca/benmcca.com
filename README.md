@@ -4,7 +4,7 @@ Welcome to the repository for my personal website! This project is a product of 
 
 ## About Me
 
-I am enthusiastic about web development and have completed three web development courses at NJIT. My internship experience in 2023 was instrumental in honing my skills in JavaScript, React, HTML, and CSS. This website is particularly special to me as it marks my first venture into hosting a live site.
+I am enthusiastic about web development and have completed three web development courses at NJIT. My internship experience played a big role in finding a passion for JavaScript, React, HTML, and CSS. This website is particularly special to me as it marks my first venture into hosting a live site.
 
 ## Learning Highlights
 
