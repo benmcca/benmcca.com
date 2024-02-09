@@ -994,7 +994,7 @@ a:visited {
     }
 }
 
-@media only screen and (max-height: 850px) {
+@media only screen and (min-width: 1025px) and (max-height: 850px) {
     .home-container {
         height: 60vh; /* Viewport height */
     }
@@ -1005,5 +1005,9 @@ a:visited {
     
     .home-arrow {
         height: 30vh; /* Viewport height */
+    }
+
+    .home-arrow video {
+        width: 150px;
     }
 }
