@@ -9,6 +9,7 @@ body, html {
     background-color: black;
     color: white;
     font-family: 'helvetica', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -25,6 +26,27 @@ a:visited {
     --bar-height:8px;
     --hamburger-gap:6px;
     --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2)
+}
+
+/* scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333; /* Dark gray */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #666; /* Medium gray */
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #999; /* Light gray */
 }
 
 .mobile-logo {
@@ -969,5 +991,19 @@ a:visited {
     
     .contactLinks a:hover {
         filter: sepia(100%) saturate(600%);
+    }
+}
+
+@media only screen and (max-height: 850px) {
+    .home-container {
+        height: 60vh; /* Viewport height */
+    }
+
+    .home-container img {
+        max-width: 30vw;
+    }
+    
+    .home-arrow {
+        height: 30vh; /* Viewport height */
     }
 }
