@@ -271,6 +271,24 @@ a:visited {
     opacity: 1;
 }
 
+.projects-section {
+    margin-top: 5em;
+}
+
+.project-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.project-card {
+    width: 500px;
+    height: 600px;
+    background-color: grey;
+}
+
+
 .experience-section {
     margin-top: 15vh;
 }
