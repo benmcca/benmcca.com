@@ -159,6 +159,7 @@ a:visited {
 
 .centered-content img {
     max-width: 40vw;
+    max-height: 40vh;
     height: auto;
 }
 
@@ -172,7 +173,8 @@ a:visited {
 .content-container {
     padding: 8em;
     padding-top: 4em;
-    background: url('/img/background.png') repeat center center;
+    background-color: black;
+    /* background: url('/img/background.png') repeat center center; */
     background-size: cover;
 }
 
