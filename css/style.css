@@ -219,10 +219,12 @@ a:visited {
 .iconImg {
     width: 30px;
     margin-left: 5px;
+    transition: scale 0.1s linear;
 }
 
 .iconImg:hover {
-    filter: sepia(100%) saturate(600%)
+    filter: sepia(100%) saturate(600%);
+    scale: 1.1;
 }
 
 .about-text span {
