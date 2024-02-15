@@ -173,6 +173,7 @@ a:visited {
 .content-container {
     padding: 8em;
     padding-top: 4em;
+    padding-bottom: 4em;
     background-color: black;
     /* background: url('/img/background.png') repeat center center; */
     background-size: cover;
@@ -400,6 +401,11 @@ a:visited {
 .contactLinks a:hover {
     filter: sepia(100%) saturate(600%);
     scale: 1.075;
+}
+
+.raven {
+    max-width: 20vw;
+    margin-top: 5vh;
 }
 
 
@@ -635,6 +641,11 @@ a:visited {
     .contactLinks a:hover {
         filter: sepia(100%) saturate(600%);
     }
+
+    .raven {
+        max-width: 40vw;
+        margin-top: 4vh;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -860,6 +871,11 @@ a:visited {
     .contactLinks a:hover {
         filter: sepia(100%) saturate(600%);
     }
+
+    .raven {
+        max-width: 30vw;
+        margin-top: 4vh;
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1450px) {
@@ -995,6 +1011,11 @@ a:visited {
     
     .contactLinks a:hover {
         filter: sepia(100%) saturate(600%);
+    }
+
+    .raven {
+        max-width: 25vw;
+        margin-top: 4vh;
     }
 }
 
