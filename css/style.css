@@ -123,7 +123,12 @@ a:visited {
     padding-right: 25px;
 }
 
+.menubar img {
+    transition: scale 0.1s ease-out, filter 0.1s ease-out;
+}
+
 .menubar img:hover {
+    scale: 1.05;
     filter: sepia(100%) saturate(600%)
 }
 
@@ -400,7 +405,7 @@ a:visited {
 
 .contactLinks a:hover {
     filter: sepia(100%) saturate(600%);
-    scale: 1.075;
+    scale: 1.025;
 }
 
 .raven {
