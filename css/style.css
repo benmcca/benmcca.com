@@ -348,11 +348,34 @@ a:visited {
     color: rgb(222, 222, 222);
 }
 
+.schoolName {
+    display: flex;
+}
+
+.schoolName .company-logo {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+}
+
 .positionName {
     font-weight: bold;
     font-size: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+}
+
+.positionName .company-logo {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
 }
 
 .positionName .company {
