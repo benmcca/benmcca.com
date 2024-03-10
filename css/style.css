@@ -394,6 +394,7 @@ a:visited {
 .detailsList {
     list-style-type: none; /* Remove default list styles */
     padding: 0;
+    padding-bottom: 15px;
     margin: 0;
 }
 
@@ -867,7 +868,7 @@ a:visited {
     .detailsList {
         /* list-style-type: none; */
         padding: 0;
-        padding-bottom: 15px;
+        padding-bottom: 25px;
         margin: 0;
     }
 
