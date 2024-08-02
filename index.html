@@ -1,296 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>benmccabe</title>
-    <link rel="icon" href="img/tabIcon.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/tabIcon.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJE8GKHRX6"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TJE8GKHRX6"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-TJE8GKHRX6');
+      gtag("config", "G-TJE8GKHRX6");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <label class="hamburger-menu">
-        <input type="checkbox" id="hamburgerCheckbox">
+      <input type="checkbox" id="hamburgerCheckbox" />
     </label>
     <aside class="menubar">
-        <nav>
-            <a class="logo" href="#home">
-                <img src="img/navLogo.jpg" height="50px" style="transform: scale(1.25);">
-            </a>
-            <a class="navItem" href="#home">
-                <img src="img/homeHeader.jpg" height="50px">
-            </a>
-            <a class="navItem" href="#about">
-                <img src="img/aboutHeader.jpg" height="50px">
-            </a>
-            <a class="navItem" href="#skills">
-                <img src="img/skillsHeader.jpg" height="50px">
-            </a>
-            <a class="navItem" href="#experience">
-                <img src="img/experienceHeader.jpg" height="50px">
-            </a>
-            <a class="navItem" href="#contact">
-                <img src="img/contactHeader.jpg" height="50px">
-            </a>
-        </nav>
+      <nav>
+        <a class="logo" href="#home">
+          <img
+            src="img/navLogo.jpg"
+            height="50px"
+            style="transform: scale(1.25)"
+          />
+        </a>
+        <a class="navItem" href="#home">
+          <img src="img/homeHeader.jpg" height="50px" />
+        </a>
+        <a class="navItem" href="#about">
+          <img src="img/aboutHeader.jpg" height="50px" />
+        </a>
+        <a class="navItem" href="#skills">
+          <img src="img/skillsHeader.jpg" height="50px" />
+        </a>
+        <a class="navItem" href="#experience">
+          <img src="img/experienceHeader.jpg" height="50px" />
+        </a>
+        <a class="navItem" href="#contact">
+          <img src="img/contactHeader.jpg" height="50px" />
+        </a>
+      </nav>
     </aside>
 
     <div class="home-container" id="home">
-        <div class="centered-content">
-            <a class="navItem" href="#about">
-                <img src="img/hello.jpg" alt="welcome image">
-            </a>
-        </div>
+      <div class="centered-content">
+        <a class="navItem" href="#about">
+          <img src="img/hello.jpg" alt="welcome image" />
+        </a>
+      </div>
     </div>
     <div class="home-arrow">
-        <div class="centered-content">
-            <a class="navItem" href="#about">
-                <video autoplay muted playsinline disableRemotePlayback width="200px">
-                    <source src="img/arrow.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </a>
-        </div>
+      <div class="centered-content">
+        <a class="navItem" href="#about">
+          <video autoplay muted playsinline disableRemotePlayback width="200px">
+            <source src="img/arrow.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </a>
+      </div>
     </div>
 
     <div class="content-container">
-        <div class="about-section" id="about">
-            <div class="centered-logo">
-                <img class="about-section-logo" src="img/aboutmePaper.png">
-            </div>
-            <div class="about-content">
-                <div class="centered-logo">
-                    <img class="about-picture" src="img/aboutme/me.jpg">
-                </div>
-                <div class="about-text">
-                    <div class="about-headline">
-                        Hey, I'm <span class="me">Ben</span>!
-                        <a href="https://www.linkedin.com/in/benmcca/" target="_blank" onclick="ga('send', 'event', 'Linkin Route', 'Click', 'Linkedin Route');"><img class="iconImg" src="img/linkedinIcon.png"></a>
-                        <a href="https://github.com/benmcca" target="_blank"><img class="iconImg" src="img/githubIcon.png"></a>
-                        <a href="mailto:benmccabe19@gmail.com"><img class="iconImg" src="img/mailIcon.png"></a>
-                    </div>
-                    I'm in my third year at <span class="njit">NJIT</span>, studying Computer Science in the Honors College. 
-                    Right now, I enjoy being creative and making cool stuff with code. 
-                    I'm especially interested in full-stack web development. 
-                    I love building things online that people can actually use and I'm excited to bring more ideas to life.
-                    <br>
-                    <br>
-                    I find a lot of inspiration in the music that I listen to.
-                    Some of my favorite albums as of now are "<span class="blonde">Blonde</span>" by Frank Ocean, "<span class="rodeo">Rodeo</span>" by Travis Scott, "<span class="what">What Could Possibly Go Wrong</span>" by Dominic Fike, and "<span class="lets">Lets Start Here.</span>" by Lil Yachty.
-                    <br>
-                    <br>
-                    You can catch me <span class="skateboarding">skateboarding</span> to class, <span class="hiking">hiking</span> the trails, or doing <span class="yoyo">yoyo</span> tricks.
-                    I also enjoy building mechanical keyboards for the ideal typing experience. 
-                    Whether I'm coding or not, I love finding fun in what I do.
-                </div>
-            </div>
-        </div>
-    
-        <div class="skills-section" id="skills">
-            <div class="centered-logo">
-                <img class="skills-section-logo" src="img/skillsPaper.png">
-            </div>
-            <div class="tool-container">
-                <div class="tool-logos">
-                    <div class="logo-item">
-                        <img class="js" src="img/skills/js.png">
-                        <div class="hover-text">javascript</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="react" src="img/skills/react.png">
-                        <div class="hover-text">react</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="css" src="img/skills/css.png">
-                        <div class="hover-text">css</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="html" src="img/skills/html.png">
-                        <div class="hover-text">html</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="python" src="img/skills/python.png">
-                        <div class="hover-text">python</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="cpp" src="img/skills/c++.png">
-                        <div class="hover-text">c++</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="java" src="img/skills/java.png">
-                        <div class="hover-text">java</div>
-                    </div>
-                    <div class="logo-item">
-                        <img class="php" src="img/skills/php.png">
-                        <div class="hover-text">php</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="experience-section" id="experience">
-            <div class="centered-logo">
-                <img class="experience-section-logo" src="img/experiencePaper.png">
-            </div>
-            <div class="centered-logo">
-                <a class="resume-button" href="Benjamin_McCabe_Resume.pdf" target="_blank" onclick="ga('send', 'event', 'View Resume', 'Click', 'View Resume');">View Resume</a>
-                <img src="img/listIcon.jpg" style="width: 20px; height: 20px;">
-                <a class="resume-button" href="Benjamin_McCabe_Resume.pdf" download onclick="ga('send', 'event', 'Download Resume', 'Click', 'Download Resume');">Download</a>
-            </div>
-            <div class="experience-text">
-                <sectionTitle>Education</sectionTitle>
-                <sectionText>
-                    <div class="schoolName">
-                        <div class="image-section">
-                            <img class="company-logo" src="img/njit.jpg">
-                        </div>
-                        <div class="title-section">
-                            <div class="school">Albert Dorman Honors College, New Jersey Inst. of Technology</div>
-                            <div class="degree">B.S. in Computer Science<span class="grad">, Expected Grad: May 2025</span></div>
-                        </div>
-                    </div>
-                    <span style="font-weight: bold;">GPA: 3.871 / 4.00</span> - Dean's List
-                    <br>
-                    <div style="padding-top: 10px;"><span style="font-weight: bold;">Relevant Courses: </span>Data Structures & Algorithms, Object-Oriented Programming, Web Development, Linux Programming, Computer Networks, Data Science, Advanced Discrete Mathematics, Database Design & Management, Statistics, Calculus, Linear Algebra</div>
-                </sectionText>
-                
-                <sectionTitle>Professional Experience</sectionTitle>
-                <sectionText>
-                    <div class="positionName">
-                        <div class="image-section">
-                            <img class="company-logo" src="img/colgate.png">
-                        </div>
-                        <div class="title-section">
-                            Developer Intern<span class="company">, Colgate-Palmolive</span>
-                            <div class="date">Sept '23 - Present</div>
-                        </div>
-                    </div>
-                    <ul class="detailsList">
-                        <li class="detailsListItem">
-                            Deployed an AWS Lambda function to automate CSV file transfers from an AWS S3 bucket to Google Drive.
-                        </li>
-                        <li class="detailsListItem">
-                            Developed a Google App Script to automate the conversion of CSV files in a Google Drive folder to be automatically converted to Google Sheets for accessibility and efficiency.
-                        </li>
-                        <li class="detailsListItem">
-                            Collaborated with interns to create a server status heatmap, using data retrieved from Splunk to create a dashboard showcasing system health updates, enhancing efficiency for the team.
-                        </li>
-                    </ul>
-
-                    <div class="positionName">
-                        <div class="image-section">
-                            <img class="company-logo" src="img/optum.png">
-                        </div>
-                        <div class="title-section">
-                            Software Engineer Intern<span class="company">, Optum / UnitedHealth Group</span>
-                            <div class="date">June '23 - Aug. '23</div>
-                        </div>
-                    </div>
-                    <ul class="detailsList">
-                        <li class="detailsListItem">
-                            Designed and built a responsive internal job board website using React and CSS, implementing drag-and-drop, filters, and search bar functionality to improve user experience when applying to roles.
-                        </li>
-                        <li class="detailsListItem">
-                            Created static and dynamic data retrieval endpoints using NodeJS to connect the database to the front-end website allowing users to view and interact with the positions offered.
-                        </li>
-                        <li class="detailsListItem">
-                            Integrated SQL update queries and update endpoints to ensure the database gets modified based on user interactions.
-                        </li>
-                    </ul>
-
-                    <div class="positionName">
-                        <div class="image-section">
-                            <img class="company-logo" src="img/colgate.png">
-                        </div>
-                        <div class="title-section">
-                            Developer Intern<span class="company">, Colgate-Palmolive</span>
-                            <div class="date">June '22 - May '23</div>
-                        </div>
-                    </div>
-                    <ul class="detailsList">
-                        <li class="detailsListItem">
-                            Developed multiple Google Chrome Extensions using Google Apps Script to automate data reporting and maintain synchronization of Test & Production databases on Splunk.
-                        </li>
-                        <li class="detailsListItem">
-                            Streamlined employee tasks and enhanced team efficiency by creating workflow tools and scripts to reduce manual tasks, resulting in improved ticket completion rates.
-                        </li>
-                        <li class="detailsListItem">
-                            Utilized the Stonebranch automation tool to schedule and manage IT processes held on SAP and Linux servers.
-                        </li>
-                    </ul>
-                    
-                    <div class="positionName">
-                        <div class="image-section">
-                            <img class="company-logo" src="img/bd.jpg">
-                        </div>
-                        <div class="title-section">
-                            Software Engineer Intern<span class="company">, Becton Dickinson</span>
-                            <div class="date">Sept. '20 - May '21</div>
-                        </div>
-                    </div>
-                    <ul class="detailsList">
-                        <li class="detailsListItem">
-                            Created a material science analysis desktop application that utilizes OpenCV image recognition to evaluate videos of different rubbers under increasing tensile stress. 
-                        </li>
-                        <li class="detailsListItem">
-                            Applied the Pandas library to analyze the collected data, identifying strengths and weaknesses within each material to guide the development of medical syringes.
-                        </li>
-                    </ul>
-
-                    <div class="positionName">
-                        <div class="image-section">
-                            <img class="company-logo" src="img/njit.jpg">
-                        </div>
-                        <div class="title-section">
-                            Computer Science Tutor<span class="company">, NJIT</span>
-                            <div class="date">Jan. ‘22 - Present</div>
-                        </div>
-                    </div>
-                    <ul class="detailsList">
-                        <li class="detailsListItem">
-                            Facilitating weekly open lab sessions and conducting personalized one-on-one appointments with students focusing on introductory programming in Java, Python, C++, and JavaScript.
-                        </li>
-                    </ul>
-                        
-                </sectionText>
-            </div>
-
-            
-        </div>
-    
-        <div class="contact-section" id="contact">
-            <div class="centered-logo">
-                <img class="contact-section-logo" src="img/contactPaper.png">
-            </div>
-            <div class="contactLinks">
-                <a href="mailto:benmccabe19@gmail.com">benmccabe19@gmail.com</a>
-                <a href="https://www.linkedin.com/in/benmcca/" target="_blank" onclick="ga('send', 'event', 'Linkin Route', 'Click', 'Linkedin Route');">linkedin</a>
-            </div>
-            <div class="contactLinks">
-                <a href="https://github.com/benmcca" target="_blank">github</a>
-                <a href="https://open.spotify.com/user/59zuw8n61rl6jhvmr6detpv1m?si=4c84bb3459c94b41" target="_blank">spotify</a>
-                <a href="https://www.instagram.com/benmcca/" target="_blank">instagram</a>
-            </div>
-        </div>
-
+      <div class="about-section" id="about">
         <div class="centered-logo">
-            <a class="navItem" href="#home">
-                <img class="raven" src="img/raven.jpg">
-            </a>
+          <img class="about-section-logo" src="img/aboutmePaper.png" />
         </div>
+        <div class="about-content">
+          <div class="centered-logo">
+            <img class="about-picture" src="img/aboutme/me.jpg" />
+          </div>
+          <div class="about-text">
+            <div class="about-headline">
+              Hey, I'm <span class="me">Ben</span>!
+              <a
+                href="https://www.linkedin.com/in/benmcca/"
+                target="_blank"
+                onclick="ga('send', 'event', 'Linkin Route', 'Click', 'Linkedin Route');"
+                ><img class="iconImg" src="img/linkedinIcon.png"
+              /></a>
+              <a href="https://github.com/benmcca" target="_blank"
+                ><img class="iconImg" src="img/githubIcon.png"
+              /></a>
+              <a href="mailto:benmccabe19@gmail.com"
+                ><img class="iconImg" src="img/mailIcon.png"
+              /></a>
+            </div>
+            I'm in my fourth year at <span class="njit">NJIT</span>, studying
+            Computer Science in the Honors College. Right now, I enjoy being
+            creative and making cool stuff with code. I'm especially interested
+            in front-end web development. I love building things online that
+            people can actually use and I'm excited to bring more ideas to life.
+            This semester I'm excited to be taking an Android App Development
+            course.
+            <br />
+            <br />
+            I find a lot of inspiration in the music that I listen to. Some of
+            my favorite albums as of now are "<span class="blonde">Blonde</span
+            >" by Frank Ocean, "<span class="rodeo">Rodeo</span>" by Travis
+            Scott, "<span class="what">What Could Possibly Go Wrong</span>" by
+            Dominic Fike, and "<span class="lets">Lets Start Here.</span>" by
+            Lil Yachty.
+            <br />
+            <br />
+            You can catch me <span class="skateboarding">skateboarding</span> to
+            class, <span class="hiking">hiking</span> the trails, or doing
+            <span class="yoyo">yoyo</span> tricks. I also enjoy building
+            mechanical keyboards for the ideal typing experience. Whether I'm
+            coding or not, I love finding fun in what I do.
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section" id="skills">
+        <div class="centered-logo">
+          <img class="skills-section-logo" src="img/skillsPaper.png" />
+        </div>
+        <div class="tool-container">
+          <div class="tool-logos">
+            <div class="logo-item">
+              <img class="js" src="img/skills/js.png" />
+              <div class="hover-text">javascript</div>
+            </div>
+            <div class="logo-item">
+              <img class="react" src="img/skills/react.png" />
+              <div class="hover-text">react</div>
+            </div>
+            <div class="logo-item">
+              <img class="css" src="img/skills/css.png" />
+              <div class="hover-text">css</div>
+            </div>
+            <div class="logo-item">
+              <img class="html" src="img/skills/html.png" />
+              <div class="hover-text">html</div>
+            </div>
+            <div class="logo-item">
+              <img class="python" src="img/skills/python.png" />
+              <div class="hover-text">python</div>
+            </div>
+            <div class="logo-item">
+              <img class="cpp" src="img/skills/c++.png" />
+              <div class="hover-text">c++</div>
+            </div>
+            <div class="logo-item">
+              <img class="java" src="img/skills/java.png" />
+              <div class="hover-text">java</div>
+            </div>
+            <div class="logo-item">
+              <img class="php" src="img/skills/php.png" />
+              <div class="hover-text">php</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-section" id="experience">
+        <div class="centered-logo">
+          <img class="experience-section-logo" src="img/experiencePaper.png" />
+        </div>
+        <div class="centered-logo">
+          <a
+            class="resume-button"
+            href="Benjamin_McCabe_Resume.pdf"
+            target="_blank"
+            onclick="ga('send', 'event', 'View Resume', 'Click', 'View Resume');"
+            >View Resume</a
+          >
+          <img src="img/listIcon.jpg" style="width: 20px; height: 20px" />
+          <a
+            class="resume-button"
+            href="Benjamin_McCabe_Resume.pdf"
+            download
+            onclick="ga('send', 'event', 'Download Resume', 'Click', 'Download Resume');"
+            >Download</a
+          >
+        </div>
+        <div class="experience-text">
+          <sectionTitle>Education</sectionTitle>
+          <sectionText>
+            <div class="schoolName">
+              <div class="image-section">
+                <img class="company-logo" src="img/njit.jpg" />
+              </div>
+              <div class="title-section">
+                <div class="school">
+                  Albert Dorman Honors College, New Jersey Inst. of Technology
+                </div>
+                <div class="degree">
+                  B.S. in Computer Science<span class="grad"
+                    >, Expected Grad: May 2025</span
+                  >
+                </div>
+              </div>
+            </div>
+            <span style="font-weight: bold">GPA: 3.89 / 4.00</span> - Dean's
+            List
+            <br />
+            <div style="padding-top: 10px">
+              <span style="font-weight: bold">Relevant Courses: </span>Adv. Data
+              Structures & Algorithms, Adv. Web Development, C Programming,
+              Object-Oriented Programming, Computer Networks, Data Science,
+              Database Design & Management
+            </div>
+          </sectionText>
+
+          <sectionTitle>Professional Experience</sectionTitle>
+          <sectionText>
+            <div class="positionName">
+              <div class="image-section">
+                <img class="company-logo" src="img/optum.png" />
+              </div>
+              <div class="title-section">
+                Software Engineer Intern<span class="company"
+                  >, Optum / UnitedHealth Group</span
+                >
+                <div class="date">June '24 - Aug. '24</div>
+              </div>
+            </div>
+            <ul class="detailsList">
+              <li class="detailsListItem">
+                Migrated Jenkinsfile Pipelines to Github Actions, seamlessly
+                integrating with a preexisting codebase on Github, improving
+                security and enhancing monitoring of CI/CD processes for over 60
+                repositories.
+              </li>
+              <li class="detailsListItem">
+                Achieved cost savings of $400k by eliminating licensing,
+                storage, computing, and support costs.
+              </li>
+              <li class="detailsListItem">
+                Led a team of interns by facilitating daily standup meetings,
+                end-of-sprint retrospectives, and managing the Agile Board to
+                effectively delegate tasks and ensure successful project
+                delivery.
+              </li>
+            </ul>
+
+            <div class="positionName">
+              <div class="image-section">
+                <img class="company-logo" src="img/colgate.png" />
+              </div>
+              <div class="title-section">
+                Part-Time Developer<span class="company"
+                  >, Colgate-Palmolive</span
+                >
+                <div class="date">Sept. '23 - May '24</div>
+              </div>
+            </div>
+            <ul class="detailsList">
+              <li class="detailsListItem">
+                Deployed an AWS Lambda function to automate CSV file transfers
+                from an AWS S3 bucket to Google Drive.
+              </li>
+              <li class="detailsListItem">
+                Developed a Google App Script to automate the conversion of CSV
+                files in a Google Drive folder to be automatically converted to
+                Google Sheets for accessibility and efficiency.
+              </li>
+              <li class="detailsListItem">
+                Collaborated with interns to create a server status heatmap,
+                using data retrieved from Splunk to create a dashboard
+                showcasing system health updates, enhancing efficiency for the
+                team.
+              </li>
+            </ul>
+
+            <div class="positionName">
+              <div class="image-section">
+                <img class="company-logo" src="img/optum.png" />
+              </div>
+              <div class="title-section">
+                Software Engineer Intern<span class="company"
+                  >, Optum / UnitedHealth Group</span
+                >
+                <div class="date">June '23 - Aug. '23</div>
+              </div>
+            </div>
+            <ul class="detailsList">
+              <li class="detailsListItem">
+                Designed and built a responsive internal job board website using
+                React and CSS, implementing drag-and-drop, filters, and search
+                bar functionality to improve user experience when applying to
+                roles.
+              </li>
+              <li class="detailsListItem">
+                Created static and dynamic data retrieval endpoints using NodeJS
+                to connect the database to the front-end website allowing users
+                to view and interact with the positions offered.
+              </li>
+              <li class="detailsListItem">
+                Integrated SQL update queries and update endpoints to ensure the
+                database gets modified based on user interactions.
+              </li>
+            </ul>
+
+            <div class="positionName">
+              <div class="image-section">
+                <img class="company-logo" src="img/colgate.png" />
+              </div>
+              <div class="title-section">
+                Developer Intern<span class="company">, Colgate-Palmolive</span>
+                <div class="date">June '22 - May '23</div>
+              </div>
+            </div>
+            <ul class="detailsList">
+              <li class="detailsListItem">
+                Developed multiple Google Chrome Extensions using Google Apps
+                Script to automate data reporting and maintain synchronization
+                of Test & Production databases on Splunk.
+              </li>
+              <li class="detailsListItem">
+                Streamlined employee tasks and enhanced team efficiency by
+                creating workflow tools and scripts to reduce manual tasks,
+                resulting in improved ticket completion rates.
+              </li>
+              <li class="detailsListItem">
+                Utilized the Stonebranch automation tool to schedule and manage
+                IT processes held on SAP and Linux servers.
+              </li>
+            </ul>
+
+            <div class="positionName">
+              <div class="image-section">
+                <img class="company-logo" src="img/bd.jpg" />
+              </div>
+              <div class="title-section">
+                Software Engineer Intern<span class="company"
+                  >, Becton Dickinson</span
+                >
+                <div class="date">Sept. '20 - May '21</div>
+              </div>
+            </div>
+            <ul class="detailsList">
+              <li class="detailsListItem">
+                Created a material science analysis desktop application that
+                utilizes OpenCV image recognition to evaluate videos of
+                different rubbers under increasing tensile stress.
+              </li>
+              <li class="detailsListItem">
+                Applied the Pandas library to analyze the collected data,
+                identifying strengths and weaknesses within each material to
+                guide the development of medical syringes.
+              </li>
+            </ul>
+
+            <div class="positionName">
+              <div class="image-section">
+                <img class="company-logo" src="img/njit.jpg" />
+              </div>
+              <div class="title-section">
+                Computer Science Tutor<span class="company">, NJIT</span>
+                <div class="date">Jan. ‘22 - Present</div>
+              </div>
+            </div>
+            <ul class="detailsList">
+              <li class="detailsListItem">
+                Facilitating weekly open lab sessions and conducting
+                personalized one-on-one appointments with students focusing on
+                introductory programming in Java, Python, C++, and JavaScript.
+              </li>
+            </ul>
+          </sectionText>
+        </div>
+      </div>
+
+      <div class="contact-section" id="contact">
+        <div class="centered-logo">
+          <img class="contact-section-logo" src="img/contactPaper.png" />
+        </div>
+        <div class="contactLinks">
+          <a href="mailto:benmccabe19@gmail.com">benmccabe19@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/benmcca/"
+            target="_blank"
+            onclick="ga('send', 'event', 'Linkin Route', 'Click', 'Linkedin Route');"
+            >linkedin</a
+          >
+        </div>
+        <div class="contactLinks">
+          <a href="https://github.com/benmcca" target="_blank">github</a>
+          <a
+            href="https://open.spotify.com/user/59zuw8n61rl6jhvmr6detpv1m?si=4c84bb3459c94b41"
+            target="_blank"
+            >spotify</a
+          >
+          <a href="https://www.instagram.com/benmcca/" target="_blank"
+            >instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="centered-logo">
+        <a class="navItem" href="#home">
+          <img class="raven" src="img/raven.jpg" />
+        </a>
+      </div>
     </div>
 
-    
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
