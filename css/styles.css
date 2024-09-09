@@ -145,6 +145,18 @@ a:visited {
   background-color: black;
 }
 
+.helloImage {
+  max-width: 40vw;
+  max-height: 40vh;
+  height: auto;
+  transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
+}
+
+.helloImage:hover {
+  scale: 1.05;
+  rotate: 1.5deg;
+}
+
 .home-arrow {
   height: 25vh; /* Viewport height */
 }
