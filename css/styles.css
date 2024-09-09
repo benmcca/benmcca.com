@@ -290,9 +290,6 @@ a:visited {
   border-radius: 5px;
 }
 
-.project-content {
-}
-
 .project-title {
   font-size: 32px;
   font-style: italic;
@@ -511,7 +508,7 @@ a:visited {
 
 .contactLinks a:hover {
   filter: sepia(100%) saturate(600%);
-  scale: 1.025;
+  scale: 1.01;
 }
 
 .raven {
