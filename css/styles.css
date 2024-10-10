@@ -273,7 +273,7 @@ a:visited {
   flex-direction: column;
   background-color: rgb(40, 40, 40);
   border-radius: 10px;
-  width: 420px;
+  max-width: 420px;
   height: 440px;
   padding: 15px;
   box-shadow: 0px 10px 27px -1px rgba(0, 0, 0, 0.7);
@@ -281,7 +281,7 @@ a:visited {
 }
 
 .project-card:hover {
-  scale: 1.05;
+  scale: 1.035;
 }
 
 .project-thumbnail {
@@ -599,6 +599,18 @@ a:visited {
   .about-text {
     font-size: 17px;
     line-height: 1.4;
+  }
+
+  .projects-section-logo {
+    width: 80vw;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-card {
+    min-height: 400px;
   }
 
   .skills-section .skills-section-logo {
