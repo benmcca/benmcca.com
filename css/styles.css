@@ -300,6 +300,19 @@ a:visited {
   margin-top: 5px;
 }
 
+.project-title a {
+  color: rgb(255, 253, 122); /* The color you want for the link */
+}
+.project-title a:visited {
+  color: rgb(255, 253, 122); /* Same color for visited state */
+}
+.project-title a:hover {
+  color: rgb(255, 253, 122); /* Same color for hover state */
+}
+.project-title a:active {
+  color: rgb(255, 253, 122); /* Same color for active state */
+}
+
 .project-dates {
   color: #b6b6b6;
   font-weight: bold;
