@@ -324,50 +324,6 @@ a:visited {
   font-size: 18px;
 }
 
-.skills-section {
-  margin-top: 10em;
-}
-
-.skills-section .skills-section-logo {
-  width: 30vw;
-  max-width: 600px;
-}
-
-.tool-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  margin: 0 auto;
-}
-
-.logo-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-}
-
-.logo-item img {
-  max-height: 20vh;
-  max-width: 20vh;
-  transition: 0.3s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
-}
-
-.logo-item .hover-text {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 25px;
-  padding-top: 20px;
-  padding-left: 50px;
-  opacity: 0;
-  transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
-}
-
-.logo-item:hover .hover-text {
-  opacity: 1;
-}
-
 .experience-section {
   margin-top: 5em;
 }
@@ -626,48 +582,6 @@ a:visited {
     min-height: 400px;
   }
 
-  .skills-section .skills-section-logo {
-    width: 60vw;
-  }
-
-  .skills-section {
-    margin-top: 5vh;
-  }
-
-  .tool-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .tool-logos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    width: 95vw;
-    grid-gap: 10px;
-    margin-top: 2vh;
-  }
-
-  .logo-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-  }
-
-  .logo-item img {
-    max-height: 20vh;
-    max-width: 20vw;
-  }
-
-  .logo-item .hover-text {
-    padding-top: 20px;
-    padding-left: 50px;
-    font-size: 22px;
-  }
-
   .experience-section .experience-section-logo {
     width: 90vw;
   }
@@ -855,46 +769,6 @@ a:visited {
     margin-right: 5vw;
   }
 
-  .skills-section .skills-section-logo {
-    width: 50vw;
-  }
-
-  .skills-section {
-    margin-top: 5vh;
-  }
-
-  .tool-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .tool-logos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 95vw;
-    grid-gap: 10px;
-    margin-top: 2vh;
-  }
-
-  .logo-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-  }
-
-  .logo-item img {
-    max-width: 15vw;
-  }
-
-  .logo-item .hover-text {
-    padding-top: 20px;
-    padding-left: 50px;
-    font-size: 24px;
-  }
-
   .experience-section .experience-section-logo {
     width: 80vw;
   }
@@ -1042,46 +916,6 @@ a:visited {
     line-height: 1.4;
     margin-left: 5vw;
     margin-right: 5vw;
-  }
-
-  .skills-section .skills-section-logo {
-    width: 40vw;
-  }
-
-  .skills-section {
-    margin-top: 3vh;
-  }
-
-  .tool-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .tool-logos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 95vw;
-    grid-gap: 10px;
-    margin-top: 2vh;
-  }
-
-  .logo-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-  }
-
-  .logo-item img {
-    max-width: 13vw;
-  }
-
-  .logo-item .hover-text {
-    padding-top: 20px;
-    padding-left: 50px;
-    font-size: 24px;
   }
 
   .experience-section .experience-section-logo {
