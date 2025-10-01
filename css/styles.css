@@ -361,7 +361,7 @@ a:visited {
 .experience-section sectionTitle {
   font-weight: bold;
   font-style: italic;
-  font-size: 20px;
+  font-size: 22px;
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -375,19 +375,18 @@ a:visited {
 
 .experience-section .school {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .experience-section .degree {
   color: rgb(222, 222, 222);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .experience-section .degree .grad {
   font-weight: bold;
-  font-size: 16px;
   font-style: italic;
   color: rgb(222, 222, 222);
 }
@@ -396,32 +395,25 @@ a:visited {
   display: flex;
 }
 
-.schoolName .company-logo {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 2px;
-}
-
 .positionName {
   font-weight: bold;
   font-size: 25px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: flex;
 }
 
-.positionName .company-logo {
-  width: 50px;
+.company-logo {
+  width: 70px;
   height: auto;
   margin-right: 10px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .image-section {
   display: flex;
   justify-content: center; /* horizontally center */
-  align-items: center; /* vertically center */
+  height: fit-content;
 }
 
 .positionName .company {
