@@ -393,13 +393,16 @@ a:visited {
 
 .schoolName {
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .positionName {
   font-weight: bold;
   font-size: 25px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
 }
 
@@ -424,7 +427,7 @@ a:visited {
 
 .positionName .date {
   color: rgb(205, 205, 205);
-  font-size: 15px;
+  font-size: 16px;
   font-style: italic;
   padding-top: 2px;
 }
