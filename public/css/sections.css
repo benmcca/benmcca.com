@@ -31,15 +31,23 @@
 }
 
 .about-headline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   font-size: 32px;
   font-weight: bold;
   font-style: italic;
   margin-bottom: 5px;
 }
 
+.about-headline .me {
+  margin-right: -0px;
+}
+
 .iconImg {
   width: 30px;
-  margin-left: 5px;
+  margin-left: 0;
   transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
 }
 

@@ -5,6 +5,8 @@ import SectionHeader from "../components/SectionHeader.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import ExperienceEntry from "../components/ExperienceEntry.astro";
 import { aboutImages, education, experience, projects, socialLinks } from "../data/content.js";
+
+const profileSocialLinks = socialLinks.filter(({ label }) => label !== "Email");
 ---
 
 <Layout>
@@ -41,7 +43,7 @@ import { aboutImages, education, experience, projects, socialLinks } from "../da
           <div class="about-text">
             <div class="about-headline">
               <span class="me" data-about-image={aboutImages.default.src} data-rotation={aboutImages.default.rotation} tabindex="0">Ben McCabe</span>
-              {socialLinks.map((link) => (
+              {profileSocialLinks.map((link) => (
                 <a href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel={link.href.startsWith("http") ? "noreferrer" : undefined} aria-label={link.label}>
                   <img class="iconImg" src={link.image} alt={link.label} />
                 </a>
