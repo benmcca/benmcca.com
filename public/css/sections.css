@@ -5,6 +5,8 @@
 .about-section .about-section-logo {
   width: 45vw;
   max-width: 900px;
+  height: auto;
+  object-fit: contain;
 }
 
 .about-content {
@@ -47,6 +49,8 @@
 
 .iconImg {
   width: 30px;
+  height: 30px;
+  object-fit: contain;
   margin-left: 0;
   transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
 }
@@ -273,6 +277,8 @@
 .contact-section .contact-section-logo {
   width: 30vw;
   max-width: 600px;
+  height: auto;
+  object-fit: contain;
 }
 
 .contactLinks {

@@ -1,30 +1,56 @@
+import homeHeader from "../assets/images/homeHeader.jpg";
+import aboutHeader from "../assets/images/aboutHeader.jpg";
+import projectsHeader from "../assets/images/projectsHeader.jpeg";
+import experienceHeader from "../assets/images/experienceHeader.jpg";
+import contactHeader from "../assets/images/contactHeader.jpg";
+import linkedinIcon from "../assets/images/linkedinIcon.png";
+import githubIcon from "../assets/images/githubIcon.png";
+import mailIcon from "../assets/images/mailIcon.png";
+import artPortfolioThumbnail from "../assets/images/artPortfolioThumbnail.jpeg";
+import digiFitThumbnail from "../assets/images/DigiFit.png";
+import myRotationsThumbnail from "../assets/images/myRotationsThumbnail.jpg";
+import georgiaTechLogo from "../assets/images/gt.png";
+import njitLogo from "../assets/images/njit.jpg";
+import optumLogo from "../assets/images/optum.png";
+import colgateLogo from "../assets/images/colgate.jpeg";
+import bdLogo from "../assets/images/bd.jpg";
+import aboutMe from "../assets/images/me.jpg";
+import njitAbout from "../assets/images/njit.jpeg";
+import skateboarding from "../assets/images/skateboarding.JPG";
+import hiking from "../assets/images/hiking.jpg";
+import yoyoing from "../assets/images/yoyoing.jpg";
+import blonde from "../assets/images/blonde.jpeg";
+import rodeo from "../assets/images/rodeo.jpg";
+import whatCouldPossiblyGoWrong from "../assets/images/whatcouldpossiblygowrong.webp";
+import letsStartHere from "../assets/images/letsstarthere.jpeg";
+
 export const navigation = [
-  { label: "Home", href: "#home", image: "/img/homeHeader.jpg" },
-  { label: "About", href: "#about", image: "/img/aboutHeader.jpg" },
-  { label: "Projects", href: "#projects", image: "/img/projectsHeader.jpeg" },
+  { label: "Home", href: "#home", image: homeHeader },
+  { label: "About", href: "#about", image: aboutHeader },
+  { label: "Projects", href: "#projects", image: projectsHeader },
   {
     label: "Experience",
     href: "#experience",
-    image: "/img/experienceHeader.jpg",
+    image: experienceHeader,
   },
-  { label: "Contact", href: "#contact", image: "/img/contactHeader.jpg" },
+  { label: "Contact", href: "#contact", image: contactHeader },
 ];
 
 export const socialLinks = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/benmcca/",
-    image: "/img/linkedinIcon.png",
+    image: linkedinIcon,
   },
   {
     label: "GitHub",
     href: "https://github.com/benmcca",
-    image: "/img/githubIcon.png",
+    image: githubIcon,
   },
   {
     label: "Email",
     href: "mailto:benmccabe19@gmail.com",
-    image: "/img/mailIcon.png",
+    image: mailIcon,
   },
 ];
 
@@ -33,7 +59,7 @@ export const projects = [
     title: "Art Portfolio",
     date: "Sept. '26",
     href: "https://benmakes.vercel.app/",
-    image: "/img/artPortfolioThumbnail.jpeg",
+    image: artPortfolioThumbnail,
     description:
       "A place to display some paintings, woodworking projects, videos, and more things I've created.",
   },
@@ -41,7 +67,7 @@ export const projects = [
     title: "DigiFit",
     date: "Dec. '24",
     href: "https://www.youtube.com/watch?v=bpV8qwx5OAY",
-    image: "/img/DigiFit.png",
+    image: digiFitThumbnail,
     description:
       "A mobile app made in Kotlin, enabling users to create a digital closet by uploading photos of their clothing and posting outfit combinations of their digital clothing items.",
   },
@@ -49,7 +75,7 @@ export const projects = [
     title: "myRotations",
     date: "May '24 - July '24",
     href: "https://myrotations.vercel.app/",
-    image: "/img/myRotationsThumbnail.jpg",
+    image: myRotationsThumbnail,
     description:
       "A music discovery platform leveraging the MERN stack and iTunes API to explore my most listened-to albums with an engaging user interface I designed.",
   },
@@ -58,7 +84,7 @@ export const projects = [
 export const education = [
   {
     school: "Georgia Institute of Technology",
-    logo: "/img/gt.png",
+    logo: georgiaTechLogo,
     degree: "OMSCS - Specialization in Artificial Intelligence",
     credential: "Master of Science in Computer Science",
     date: "2025 -",
@@ -67,7 +93,7 @@ export const education = [
   },
   {
     school: "New Jersey Institute of Technology",
-    logo: "/img/njit.jpg",
+    logo: njitLogo,
     degree: "Albert Dorman Honors College",
     credential: "Bachelor of Science in Computer Science",
     date: "2021 - 2025",
@@ -81,7 +107,7 @@ export const experience = [
   {
     role: "Software Engineer",
     company: "Optum",
-    logo: "/img/optum.png",
+    logo: optumLogo,
     date: "July '25 -",
     current: true,
     details: [
@@ -94,7 +120,7 @@ export const experience = [
   {
     role: "Software Engineer Intern",
     company: "Colgate-Palmolive",
-    logo: "/img/colgate.jpeg",
+    logo: colgateLogo,
     date: "Sept. '23 - May '24",
     details: [
       "Enhanced product data quality and consistency by using JavaScript to sync attributes and digital assets in Stibo PIM, improving product listings across major online retailers.",
@@ -105,7 +131,7 @@ export const experience = [
   {
     role: "Software Engineer Intern",
     company: "Optum",
-    logo: "/img/optum.png",
+    logo: optumLogo,
     date: "June '24 - Aug. '24",
     details: [
       "Migrated Jenkinsfile Pipelines to Github Actions, seamlessly integrating with a preexisting codebase on Github, improving security and enhancing monitoring of CI/CD processes for over 60 repositories.",
@@ -116,7 +142,7 @@ export const experience = [
   {
     role: "IT Developer Intern",
     company: "Colgate-Palmolive",
-    logo: "/img/colgate.jpeg",
+    logo: colgateLogo,
     date: "Sept. '23 - May '24",
     details: [
       "Automated CSV file transfers from AWS S3 to Google Drive using AWS Lambda and developed a Google Apps Script to detect and convert incoming files to Google Sheets, eliminating manual data uploads.",
@@ -127,7 +153,7 @@ export const experience = [
   {
     role: "Software Engineer Intern",
     company: "Optum",
-    logo: "/img/optum.png",
+    logo: optumLogo,
     date: "June '23 - Aug. '23",
     details: [
       "Designed and built a responsive internal job board website using React and CSS, implementing drag-and-drop, filters, and search bar functionality to improve user experience when applying to roles.",
@@ -138,7 +164,7 @@ export const experience = [
   {
     role: "IT Developer Intern",
     company: "Colgate-Palmolive",
-    logo: "/img/colgate.jpeg",
+    logo: colgateLogo,
     date: "June '22 - May '23",
     details: [
       "Developed multiple Google Chrome Extensions using Google Apps Script to automate data reporting and maintain synchronization of Test & Production databases on Splunk.",
@@ -149,7 +175,7 @@ export const experience = [
   {
     role: "Material Science Research Intern",
     company: "Becton Dickinson",
-    logo: "/img/bd.jpg",
+    logo: bdLogo,
     date: "Sept. '20 - May '21",
     details: [
       "Created a material science analysis desktop application that utilizes OpenCV image recognition to evaluate videos of different rubbers under increasing tensile stress.",
@@ -159,13 +185,13 @@ export const experience = [
 ];
 
 export const aboutImages = {
-  default: { src: "/img/aboutme/me.jpg", rotation: "-2deg" },
-  njit: { src: "/img/aboutme/njit.jpeg", rotation: "1deg" },
-  skateboarding: { src: "/img/aboutme/skateboarding.JPG", rotation: "3deg" },
-  hiking: { src: "/img/aboutme/hiking.jpg", rotation: "1deg" },
-  yoyo: { src: "/img/aboutme/yoyoing.jpg", rotation: "4deg" },
-  blonde: { src: "/img/aboutme/blonde.jpeg", rotation: "2deg" },
-  rodeo: { src: "/img/aboutme/rodeo.jpg", rotation: "3deg" },
-  what: { src: "/img/aboutme/whatcouldpossiblygowrong.webp", rotation: "4deg" },
-  lets: { src: "/img/aboutme/letsstarthere.jpeg", rotation: "1deg" },
+  default: { src: aboutMe, rotation: "-2deg" },
+  njit: { src: njitAbout, rotation: "1deg" },
+  skateboarding: { src: skateboarding, rotation: "3deg" },
+  hiking: { src: hiking, rotation: "1deg" },
+  yoyo: { src: yoyoing, rotation: "4deg" },
+  blonde: { src: blonde, rotation: "2deg" },
+  rodeo: { src: rodeo, rotation: "3deg" },
+  what: { src: whatCouldPossiblyGoWrong, rotation: "4deg" },
+  lets: { src: letsStartHere, rotation: "1deg" },
 };

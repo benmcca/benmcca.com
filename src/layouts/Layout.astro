@@ -1,5 +1,6 @@
 ---
 const { title = "benmccabe" } = Astro.props;
+import tabIcon from "../assets/images/tabIcon.png";
 ---
 <!doctype html>
 <html lang="en">
@@ -7,7 +8,7 @@ const { title = "benmccabe" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <link rel="icon" href="/img/tabIcon.png" type="image/png" />
+    <link rel="icon" href={tabIcon.src} type="image/png" />
     <link rel="stylesheet" href="/css/styles.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJE8GKHRX6"></script>
     <script is:inline>

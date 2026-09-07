@@ -5,8 +5,22 @@ import SectionHeader from "../components/SectionHeader.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import ExperienceEntry from "../components/ExperienceEntry.astro";
 import { aboutImages, education, experience, projects, socialLinks } from "../data/content.js";
+import { getImage, Image } from "astro:assets";
+import helloImage from "../assets/images/hello.png";
+import aboutMePaper from "../assets/images/aboutmePaper.png";
+import projectsPaper from "../assets/images/projectsPaper.png";
+import experiencePaper from "../assets/images/experiencePaper.png";
+import contactPaper from "../assets/images/contactPaper.png";
 
 const profileSocialLinks = socialLinks.filter(({ label }) => label !== "Email");
+const optimizedAboutImages = Object.fromEntries(
+  await Promise.all(
+    Object.entries(aboutImages).map(async ([key, image]) => [key, {
+      ...image,
+      optimized: await getImage({ src: image.src }),
+    }]),
+  ),
+);
 ---
 
 <Layout>
@@ -17,7 +31,7 @@ const profileSocialLinks = socialLinks.filter(({ label }) => label !== "Email");
       <section class="home-container" id="home" aria-label="Home">
         <div class="centered-content">
           <a class="navItem" href="#about">
-            <img src="/img/hello.png" class="helloImage" alt="Hello" draggable="false" />
+            <Image src={helloImage} class="helloImage" alt="Hello" draggable="false" />
           </a>
         </div>
       </section>
@@ -32,22 +46,22 @@ const profileSocialLinks = socialLinks.filter(({ label }) => label !== "Email");
 
     <div class="content-container">
       <section class="about-section" id="about">
-        <SectionHeader image="/img/aboutmePaper.png" alt="About me" className="about-section-logo" />
+        <SectionHeader image={aboutMePaper} alt="About me" className="about-section-logo" />
         <div class="about-content">
           <div class="centered-logo">
-            <img
+            <Image
               class="about-picture"
-              src={aboutImages.default.src}
-              data-default-image={aboutImages.default.src}
+              src={optimizedAboutImages.default.src}
+              data-default-image={optimizedAboutImages.default.optimized.src}
               alt="Ben McCabe"
             />
           </div>
           <div class="about-text">
             <div class="about-headline">
-              <span class="me" data-about-image={aboutImages.default.src} data-rotation={aboutImages.default.rotation} tabindex="0">Ben McCabe</span>
+                  <span class="me" data-about-image={optimizedAboutImages.default.optimized.src} data-rotation={optimizedAboutImages.default.rotation} tabindex="0">Ben McCabe</span>
               {profileSocialLinks.map((link) => (
                 <a href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel={link.href.startsWith("http") ? "noreferrer" : undefined} aria-label={link.label}>
-                  <img class="iconImg" src={link.image} alt={link.label} />
+                  <Image class="iconImg" src={link.image} alt={link.label} />
                 </a>
               ))}
             </div>
@@ -61,14 +75,14 @@ const profileSocialLinks = socialLinks.filter(({ label }) => label !== "Email");
       </section>
 
       <section class="projects-section" id="projects">
-        <SectionHeader image="/img/projectsPaper.png" alt="Projects" className="projects-section-logo" />
+        <SectionHeader image={projectsPaper} alt="Projects" className="projects-section-logo" />
         <div class="projects-container">
           {projects.map((project) => <ProjectCard {...project} />)}
         </div>
       </section>
 
       <section class="experience-section" id="experience">
-        <SectionHeader image="/img/experiencePaper.png" alt="Experience" className="experience-section-logo" />
+        <SectionHeader image={experiencePaper} alt="Experience" className="experience-section-logo" />
         <div class="experience-text">
           <h2 class="section-title">Education</h2>
           <div class="section-text">
@@ -82,7 +96,7 @@ const profileSocialLinks = socialLinks.filter(({ label }) => label !== "Email");
       </section>
 
       <section class="contact-section" id="contact">
-        <SectionHeader image="/img/contactPaper.png" alt="Contact" className="contact-section-logo" />
+        <SectionHeader image={contactPaper} alt="Contact" className="contact-section-logo" />
         <div class="contactLinks"><span class="contact-email">benmccabe19@gmail.com</span></div>
         <div class="contactLinks">
           <a href="https://www.linkedin.com/in/benmcca/" target="_blank" rel="noreferrer">linkedin</a>

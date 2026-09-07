@@ -1,10 +1,11 @@
 ---
 const { entry, education = false } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <div class={education ? "schoolName" : "positionName"}>
   <div class="image-section">
-    <img class="company-logo" src={entry.logo} alt={`${education ? entry.school : entry.company} logo`} loading="lazy" />
+    <Image class="company-logo" src={entry.logo} alt={`${education ? entry.school : entry.company} logo`} loading="lazy" />
   </div>
   <div class="title-section">
     {education ? (

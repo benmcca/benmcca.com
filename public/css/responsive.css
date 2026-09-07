@@ -214,13 +214,13 @@
     padding-top: 20px;
   }
 
-  .contactLinks a {
+  .contactLinks a,
+  .contactLinks .contact-email {
     font-size: 4.5vw;
   }
 
   .contactLinks .contact-email {
     max-width: 100%;
-    font-size: 6vw;
     overflow-wrap: anywhere;
     text-align: center;
   }
@@ -432,7 +432,8 @@
     padding-top: 20px;
   }
 
-  .contactLinks a {
+  .contactLinks a,
+  .contactLinks .contact-email {
     font-size: 4.5vw;
   }
 
@@ -531,7 +532,8 @@
     padding-top: 20px;
   }
 
-  .contactLinks a {
+  .contactLinks a,
+  .contactLinks .contact-email {
     font-size: 3.5vw;
   }
 

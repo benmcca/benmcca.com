@@ -1,10 +1,11 @@
 ---
 const { title, date, href, image, description } = Astro.props;
+import { Image } from "astro:assets";
 ---
 
 <article class="project-card">
   <a class="project-thumbnail-link" href={href} target="_blank" rel="noreferrer">
-    <img class="project-thumbnail" src={image} alt={`${title} project preview`} loading="lazy" />
+    <Image class="project-thumbnail" src={image} alt={`${title} project preview`} loading="lazy" />
   </a>
   <div class="project-content">
     <div class="project-header">
