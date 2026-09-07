@@ -6,6 +6,7 @@ const navbarSocialLinks = socialLinks.filter(({ label }) =>
 );
 ---
 
+<div class="mobile-navbar-background" aria-hidden="true"></div>
 <label class="hamburger-menu" for="hamburgerCheckbox">
   <input type="checkbox" id="hamburgerCheckbox" aria-label="Open navigation" />
 </label>
@@ -19,12 +20,12 @@ const navbarSocialLinks = socialLinks.filter(({ label }) =>
         <img src={item.image} alt={item.label} height="50" draggable="false" />
       </a>
     ))}
-    <div class="navbar-social-links">
-      {navbarSocialLinks.map((link) => (
-        <a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
-          <img class="iconImg" src={link.image} alt={link.label} draggable="false" />
-        </a>
-      ))}
-    </div>
   </nav>
 </aside>
+<div class="navbar-social-links">
+  {navbarSocialLinks.map((link) => (
+    <a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+      <img class="iconImg" src={link.image} alt={link.label} draggable="false" />
+    </a>
+  ))}
+</div>

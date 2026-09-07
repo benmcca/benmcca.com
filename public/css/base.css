@@ -63,6 +63,10 @@ a:visited {
   display: none;
 }
 
+.mobile-navbar-background {
+  display: none;
+}
+
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
   display: flex;
@@ -138,10 +142,12 @@ a:visited {
 
 .navbar-social-links {
   display: flex;
+  position: fixed;
+  top: 35px;
+  right: 20px;
+  z-index: 100;
   align-items: center;
   gap: 12px;
-  margin-left: auto;
-  margin-right: 20px;
 }
 
 .navbar-social-links a {
