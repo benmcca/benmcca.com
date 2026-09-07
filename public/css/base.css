@@ -174,8 +174,15 @@ a:visited {
   translate: 0;
 }
 
+.home-experience {
+  position: relative;
+  height: 100svh;
+  margin-top: -100px;
+  background-color: black;
+}
+
 .home-container {
-  height: 65vh; /* Viewport height */
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,6 +190,8 @@ a:visited {
 }
 
 .helloImage {
+  position: relative;
+  top: -4vh;
   max-width: 40vw;
   max-height: 40vh;
   height: auto;
@@ -195,7 +204,16 @@ a:visited {
 }
 
 .home-arrow {
-  height: 25vh; /* Viewport height */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2rem;
+}
+
+#arrowGif {
+  width: clamp(150px, 165px, 180px);
+  height: auto;
 }
 
 .background {
