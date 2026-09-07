@@ -2,6 +2,10 @@
   min-height: 70vh;
 }
 
+:root {
+  --section-gap: 6em;
+}
+
 .about-section .about-section-logo {
   width: 45vw;
   max-width: 900px;
@@ -66,7 +70,7 @@
 }
 
 .projects-section {
-  margin-top: 9em;
+  margin-top: var(--section-gap);
 }
 
 .projects-section-logo {
@@ -148,7 +152,7 @@
 }
 
 .experience-section {
-  margin-top: 5em;
+  margin-top: var(--section-gap);
 }
 
 .experience-section .experience-section-logo {
@@ -271,7 +275,7 @@
 }
 
 .contact-section {
-  margin-top: 8em;
+  margin-top: var(--section-gap);
 }
 
 .contact-section .contact-section-logo {

@@ -3,6 +3,7 @@
   :root {
     --bar-width: 30px;
     --bar-height: 4px;
+    --section-gap: 2em;
   }
 
   .mobile-navbar-background {
@@ -131,7 +132,7 @@
   }
 
   .experience-section {
-    margin-top: 5vh;
+    margin-top: var(--section-gap);
   }
 
   .experience-section .experience-text {
@@ -205,7 +206,7 @@
   }
 
   .contact-section {
-    margin-top: 5vh;
+    margin-top: var(--section-gap);
   }
 
   .contactLinks {
@@ -239,6 +240,7 @@
   :root {
     --bar-width: 30px;
     --bar-height: 4px;
+    --section-gap: 4em;
   }
 
   .mobile-navbar-background {
@@ -349,7 +351,7 @@
   }
 
   .experience-section {
-    margin-top: 5vh;
+    margin-top: var(--section-gap);
   }
 
   .experience-section .experience-text {
@@ -423,7 +425,7 @@
   }
 
   .contact-section {
-    margin-top: 5vh;
+    margin-top: var(--section-gap);
   }
 
   .contactLinks {
