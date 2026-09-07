@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     title: "myRotations",
-    date: "May '24 - July '24",
+    date: "July '24",
     href: "https://myrotations.vercel.app/",
     image: myRotationsThumbnail,
     description:
