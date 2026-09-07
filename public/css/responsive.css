@@ -111,11 +111,11 @@
   }
 
   .projects-container {
-    flex-direction: column;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .project-card {
-    min-height: 400px;
+    min-width: 0;
   }
 
   .experience-section .experience-section-logo {

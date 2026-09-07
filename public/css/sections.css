@@ -73,9 +73,10 @@
 }
 
 .projects-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 420px));
   gap: 30px;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -84,8 +85,8 @@
   flex-direction: column;
   background-color: rgb(40, 40, 40);
   border-radius: 10px;
-  max-width: 420px;
-  height: 440px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
   box-shadow: 0px 10px 27px -1px rgba(0, 0, 0, 0.7);
   transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);

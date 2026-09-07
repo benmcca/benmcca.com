@@ -30,6 +30,13 @@ export const socialLinks = [
 
 export const projects = [
   {
+    title: "Art Portfolio",
+    date: "Sept. '26",
+    image: "/img/artPortfolioThumbnail.jpeg",
+    description:
+      "A website to display some of my paintings, woodworking projects, and videos I've created.",
+  },
+  {
     title: "DigiFit",
     date: "Dec. '24",
     href: "https://www.youtube.com/watch?v=bpV8qwx5OAY",
