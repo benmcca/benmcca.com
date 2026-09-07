@@ -111,11 +111,9 @@
   }
 
   .projects-container {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .project-card {
-    min-width: 0;
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
   }
 
   .experience-section .experience-section-logo {
@@ -335,6 +333,12 @@
     line-height: 1.4;
     margin-left: 5vw;
     margin-right: 5vw;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 780px;
+    margin: 0 auto;
   }
 
   .experience-section .experience-section-logo {
