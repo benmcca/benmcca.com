@@ -7,6 +7,7 @@ import linkedinIcon from "../assets/images/linkedinIcon.png";
 import githubIcon from "../assets/images/githubIcon.png";
 import mailIcon from "../assets/images/mailIcon.png";
 import artPortfolioThumbnail from "../assets/images/artPortfolioThumbnail.jpeg";
+import spotifyComputerVisionThumbnail from "../assets/images/spotifyComputerVisionThumbnail.jpeg";
 import digiFitThumbnail from "../assets/images/DigiFit.png";
 import myRotationsThumbnail from "../assets/images/myRotationsThumbnail.jpg";
 import georgiaTechLogo from "../assets/images/gt.png";
@@ -62,6 +63,14 @@ export const projects = [
     image: artPortfolioThumbnail,
     description:
       "A personal portfolio showcasing my paintings, woodworking projects, videos, and other creative work.",
+  },
+  {
+    title: "Spotify Gesture Control",
+    date: "Feb. '25",
+    href: "https://github.com/benmcca/spotifyComputerVision",
+    image: spotifyComputerVisionThumbnail,
+    description:
+      "A computer vision project that uses hand gestures to control Spotify on macOS, with real-time hand tracking and gesture-based media and volume controls.",
   },
   {
     title: "DigiFit",
