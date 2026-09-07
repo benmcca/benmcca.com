@@ -15,11 +15,11 @@ const navbarSocialLinks = socialLinks.filter(({ label }) =>
 <aside class="menubar">
   <nav aria-label="Main navigation">
     <a class="logo" href="#home" aria-label="Home">
-      <Image src={navLogo} alt="Ben McCabe logo" height={50} draggable="false" />
+      <Image src={navLogo} alt="Ben McCabe logo" height={50} densities={[1, 2]} quality={90} draggable="false" />
     </a>
     {navigation.map((item) => (
       <a class="navItem" href={item.href}>
-        <Image src={item.image} alt={item.label} height={50} draggable="false" />
+        <Image src={item.image} alt={item.label} height={50} densities={[1, 2]} quality={90} draggable="false" />
       </a>
     ))}
   </nav>
