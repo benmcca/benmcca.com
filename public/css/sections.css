@@ -1,0 +1,284 @@
+.about-section {
+  min-height: 70vh;
+}
+
+.about-section .about-section-logo {
+  width: 45vw;
+  max-width: 900px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.about-picture {
+  margin-top: 5vh;
+  max-width: 100%;
+  height: auto;
+  max-height: 45vh;
+  display: block;
+  transform: rotate(-2deg);
+  transition: 0.05s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
+}
+
+.about-text {
+  font-size: 18px;
+}
+
+.about-headline {
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.iconImg {
+  width: 30px;
+  margin-left: 5px;
+  transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
+}
+
+.iconImg:hover {
+  filter: sepia(100%) saturate(600%);
+  scale: 1.1;
+}
+
+.about-text span {
+  color: rgb(255, 253, 122);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.projects-section {
+  margin-top: 9em;
+}
+
+.projects-section-logo {
+  margin-bottom: 3em;
+}
+
+.projects-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  max-width: 420px;
+  height: 440px;
+  padding: 15px;
+  box-shadow: 0px 10px 27px -1px rgba(0, 0, 0, 0.7);
+  transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
+}
+
+.project-card:hover {
+  scale: 1.035;
+}
+
+.project-thumbnail {
+  width: 100%; /* Ensures the image expands to the full width of the card */
+  max-width: 100%; /* Prevents the image from exceeding the card's width */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-radius: 5px;
+}
+
+.project-title {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(255, 253, 122);
+  margin-top: 5px;
+}
+
+.project-title a {
+  color: rgb(255, 253, 122); /* The color you want for the link */
+}
+.project-title a:visited {
+  color: rgb(255, 253, 122); /* Same color for visited state */
+}
+.project-title a:hover {
+  color: rgb(255, 253, 122); /* Same color for hover state */
+}
+.project-title a:active {
+  color: rgb(255, 253, 122); /* Same color for active state */
+}
+
+.project-dates {
+  color: #b6b6b6;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  font-size: 18px;
+}
+
+.experience-section {
+  margin-top: 5em;
+}
+
+.experience-section .experience-section-logo {
+  width: 50vw;
+  max-width: 1000px;
+  margin-bottom: 10px;
+}
+
+.resume-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+  transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
+}
+
+.resume-button:hover {
+  filter: sepia(100%) saturate(600%);
+  scale: 1.075;
+}
+
+.experience-section .experience-text {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 40px;
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+.experience-section .section-title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: right;
+  border-right: 1px solid white;
+}
+
+.experience-section .section-text {
+  padding-left: 30px;
+}
+
+.experience-section .school {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.experience-section .degree {
+  color: rgb(222, 222, 222);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.experience-section .degree .grad {
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(222, 222, 222);
+}
+
+.schoolName {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.positionName {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.company-logo {
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  height: fit-content;
+}
+
+.positionName .company {
+  font-size: 18px;
+  color: rgb(222, 222, 222);
+  font-style: italic;
+}
+
+.positionName .date {
+  color: rgb(205, 205, 205);
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 2px;
+}
+
+.detailsList {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.detailsList li {
+  padding-left: 20px; /* Space for the list item marker */
+  margin-bottom: 8px; /* Add some bottom margin for spacing between items */
+  background: url("../img/listIcon.jpg") no-repeat left center; /* Set custom image as background */
+  background-size: 14px 14px; /* Set the size of the background image */
+}
+
+.contact-section {
+  margin-top: 8em;
+}
+
+.contact-section .contact-section-logo {
+  width: 30vw;
+  max-width: 600px;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+}
+
+.contactLinks a {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
+}
+
+.contactLinks a:hover {
+  filter: sepia(100%) saturate(600%);
+  scale: 1.01;
+}
+
+.raven {
+  max-width: 20vw;
+  margin-top: 5vh;
+}
+
