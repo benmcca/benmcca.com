@@ -1,5 +1,9 @@
 ---
-import { navigation } from "../data/content.js";
+import { navigation, socialLinks } from "../data/content.js";
+
+const navbarSocialLinks = socialLinks.filter(({ label }) =>
+  ["LinkedIn", "GitHub"].includes(label),
+);
 ---
 
 <label class="hamburger-menu" for="hamburgerCheckbox">
@@ -15,5 +19,12 @@ import { navigation } from "../data/content.js";
         <img src={item.image} alt={item.label} height="50" draggable="false" />
       </a>
     ))}
+    <div class="navbar-social-links">
+      {navbarSocialLinks.map((link) => (
+        <a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+          <img class="iconImg" src={link.image} alt={link.label} draggable="false" />
+        </a>
+      ))}
+    </div>
   </nav>
 </aside>

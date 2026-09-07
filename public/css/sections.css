@@ -264,15 +264,16 @@
   padding-top: 40px;
 }
 
-.contactLinks a {
+.contactLinks a,
+.contactLinks .contact-email {
   font-size: 40px;
   font-weight: bold;
   font-style: italic;
-  cursor: pointer;
   transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
 }
 
-.contactLinks a:hover {
+.contactLinks a:hover,
+.contactLinks .contact-email:hover {
   filter: sepia(100%) saturate(600%);
   scale: 1.01;
 }
@@ -281,4 +282,3 @@
   max-width: 20vw;
   margin-top: 5vh;
 }
-

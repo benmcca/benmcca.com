@@ -121,6 +121,30 @@ a:visited {
   padding-right: 25px;
 }
 
+.menubar nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navbar-social-links a {
+  display: inline-flex;
+  padding: 0;
+  line-height: 0;
+}
+
+.navbar-social-links .iconImg {
+  width: 30px;
+  margin-left: 0px;
+}
+
 .menubar img {
   transition: 0.2s all cubic-bezier(0.17, 0.75, 0.58, 0.95);
 }
@@ -193,4 +217,3 @@ a:visited {
   /* background: url('/img/background.png') repeat center center; */
   background-size: cover;
 }
-
