@@ -180,6 +180,11 @@ a:visited {
   filter: sepia(100%) saturate(600%);
 }
 
+.menubar a.is-active img {
+  scale: 1.05;
+  filter: sepia(100%) saturate(600%);
+}
+
 .hamburger-menu:has(input:checked) + .menubar {
   translate: 0;
 }
