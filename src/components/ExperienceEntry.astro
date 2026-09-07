@@ -1,0 +1,29 @@
+---
+const { entry, education = false } = Astro.props;
+---
+
+<div class={education ? "schoolName" : "positionName"}>
+  <div class="image-section">
+    <img class="company-logo" src={entry.logo} alt={`${education ? entry.school : entry.company} logo`} loading="lazy" />
+  </div>
+  <div class="title-section">
+    {education ? (
+      <>
+        <div class="school">{entry.school}</div>
+        <div class="degree">
+          {entry.degree}<br />
+          {entry.credential}<br />
+          <span class="grad">{entry.date} {entry.current && <span class="current">Present</span>}</span>
+        </div>
+      </>
+    ) : (
+      <>
+        {entry.role}<span class="company">, {entry.company}</span>
+        <div class="date">{entry.date} {entry.current && <span class="current">Present</span>}</div>
+      </>
+    )}
+  </div>
+</div>
+<ul class="detailsList">
+  {entry.details.map((detail) => <li class="detailsListItem">{detail}</li>)}
+</ul>

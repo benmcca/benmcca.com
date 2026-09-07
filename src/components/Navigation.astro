@@ -1,0 +1,19 @@
+---
+import { navigation } from "../data/content.js";
+---
+
+<label class="hamburger-menu" for="hamburgerCheckbox">
+  <input type="checkbox" id="hamburgerCheckbox" aria-label="Open navigation" />
+</label>
+<aside class="menubar">
+  <nav aria-label="Main navigation">
+    <a class="logo" href="#home" aria-label="Home">
+      <img src="/img/navLogo.jpg" alt="Ben McCabe logo" height="50" draggable="false" />
+    </a>
+    {navigation.map((item) => (
+      <a class="navItem" href={item.href}>
+        <img src={item.image} alt={item.label} height="50" draggable="false" />
+      </a>
+    ))}
+  </nav>
+</aside>

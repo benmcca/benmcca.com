@@ -1,0 +1,24 @@
+---
+const { title = "benmccabe" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" href="/img/tabIcon.png" type="image/png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJE8GKHRX6"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-TJE8GKHRX6");
+    </script>
+  </head>
+  <body>
+    <slot />
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

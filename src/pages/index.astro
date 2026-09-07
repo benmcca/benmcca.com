@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import ExperienceEntry from "../components/ExperienceEntry.astro";
+import { aboutImages, education, experience, projects, socialLinks } from "../data/content.js";
+---
+
+<Layout>
+  <Navigation />
+
+  <main>
+    <section class="home-container" id="home" aria-label="Home">
+      <div class="centered-content">
+        <a class="navItem" href="#about">
+          <img src="/img/hello.jpg" class="helloImage" alt="Hello" draggable="false" />
+        </a>
+      </div>
+    </section>
+    <div class="home-arrow">
+      <div class="centered-content">
+        <a class="navItem" href="#about">
+          <img id="arrowGif" src="/img/arrow.gif" alt="Continue to about section" width="200" draggable="false" />
+        </a>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <section class="about-section" id="about">
+        <SectionHeader image="/img/aboutmePaper.png" alt="About me" className="about-section-logo" />
+        <div class="about-content">
+          <div class="centered-logo">
+            <img
+              class="about-picture"
+              src={aboutImages.default.src}
+              data-default-image={aboutImages.default.src}
+              alt="Ben McCabe"
+            />
+          </div>
+          <div class="about-text">
+            <div class="about-headline">
+              <span class="me" data-about-image={aboutImages.default.src} data-rotation={aboutImages.default.rotation} tabindex="0">Ben McCabe</span>
+              {socialLinks.map((link) => (
+                <a href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel={link.href.startsWith("http") ? "noreferrer" : undefined} aria-label={link.label}>
+                  <img class="iconImg" src={link.image} alt={link.label} />
+                </a>
+              ))}
+            </div>
+            Hi! I graduated from NJIT in May 2025 with a degree in Computer Science and now work as a Software Engineer at Optum. Alongside my full-time role, I'm pursuing a part-time M.S. in Computer Science through Georgia Tech, specializing in Artificial Intelligence. My experience is primarily in full-stack web development and mobile applications.
+            <br /><br />
+            What draws me to software engineering is the opportunity to build experiences that people can interact with. I enjoy combining technical problem-solving with creativity, which is why I'm especially passionate about front-end development and creating interfaces that are enjoyable and intuitive to use.
+            <br /><br />
+            Outside of programming, I enjoy creating art. Much of my inspiration comes from the music I listen to, the art I admire, and the people I surround myself with. I've explored painting, woodworking, photography, and drawing, and I'm always looking for new creative outlets. Feel free to explore some of my work below!
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <SectionHeader image="/img/projectsPaper.png" alt="Projects" className="projects-section-logo" />
+        <div class="projects-container">
+          {projects.map((project) => <ProjectCard {...project} />)}
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <SectionHeader image="/img/experiencePaper.png" alt="Experience" className="experience-section-logo" />
+        <div class="centered-logo resume-links">
+          <a class="resume-button" href="/Benjamin_McCabe_Resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+          <img src="/img/listIcon.jpg" alt="" width="20" height="20" />
+          <a class="resume-button" href="/Benjamin_McCabe_Resume.pdf" download>Download</a>
+        </div>
+        <div class="experience-text">
+          <h2 class="section-title">Education</h2>
+          <div class="section-text">
+            {education.map((entry) => <ExperienceEntry entry={entry} education />)}
+          </div>
+          <h2 class="section-title">Professional Experience</h2>
+          <div class="section-text">
+            {experience.map((entry) => <ExperienceEntry entry={entry} />)}
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <SectionHeader image="/img/contactPaper.png" alt="Contact" className="contact-section-logo" />
+        <div class="contactLinks"><a href="mailto:benmccabe19@gmail.com">benmccabe19@gmail.com</a></div>
+        <div class="contactLinks">
+          <a href="https://www.linkedin.com/in/benmcca/" target="_blank" rel="noreferrer">linkedin</a>
+          <a href="https://github.com/benmcca" target="_blank" rel="noreferrer">github</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
