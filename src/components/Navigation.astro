@@ -1,0 +1,31 @@
+---
+import { navigation, socialLinks } from "../data/content.js";
+
+const navbarSocialLinks = socialLinks.filter(({ label }) =>
+  ["LinkedIn", "GitHub"].includes(label),
+);
+---
+
+<div class="mobile-navbar-background" aria-hidden="true"></div>
+<label class="hamburger-menu" for="hamburgerCheckbox">
+  <input type="checkbox" id="hamburgerCheckbox" aria-label="Open navigation" />
+</label>
+<aside class="menubar">
+  <nav aria-label="Main navigation">
+    <a class="logo" href="#home" aria-label="Home">
+      <img src="/img/navLogo.jpg" alt="Ben McCabe logo" height="50" draggable="false" />
+    </a>
+    {navigation.map((item) => (
+      <a class="navItem" href={item.href}>
+        <img src={item.image} alt={item.label} height="50" draggable="false" />
+      </a>
+    ))}
+  </nav>
+</aside>
+<div class="navbar-social-links">
+  {navbarSocialLinks.map((link) => (
+    <a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+      <img class="iconImg" src={link.image} alt={link.label} draggable="false" />
+    </a>
+  ))}
+</div>

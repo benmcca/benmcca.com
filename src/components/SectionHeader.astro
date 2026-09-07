@@ -1,0 +1,7 @@
+---
+const { image, alt, className = "" } = Astro.props;
+---
+
+<div class="centered-logo">
+  <img class={className} src={image} alt={alt} />
+</div>
