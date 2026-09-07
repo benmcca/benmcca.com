@@ -32,6 +32,7 @@ export const projects = [
   {
     title: "Art Portfolio",
     date: "Sept. '26",
+    href: "https://benmakes.vercel.app/",
     image: "/img/artPortfolioThumbnail.jpeg",
     description:
       "A website to display some of my paintings, woodworking projects, and videos I've created.",

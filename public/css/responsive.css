@@ -102,7 +102,7 @@
   }
 
   .about-text {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.4;
   }
 
@@ -196,7 +196,7 @@
   }
 
   .detailsList li {
-    padding-left: 30px; /* Space for the list item marker */
+    padding-left: 20px; /* Space for the list item marker */
     margin-bottom: 8px; /* Add some bottom margin for spacing between items */
     background-size: 15px 15px; /* Set the size of the background image */
   }
@@ -414,7 +414,7 @@
   }
 
   .detailsList li {
-    padding-left: 30px; /* Space for the list item marker */
+    padding-left: 20px; /* Space for the list item marker */
     margin-bottom: 8px; /* Add some bottom margin for spacing between items */
     background-size: 15px 15px; /* Set the size of the background image */
   }
