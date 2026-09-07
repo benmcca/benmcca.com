@@ -30,18 +30,28 @@ const setupAboutImage = () => {
   const defaultImage = picture.dataset.defaultImage;
   let resetTimer;
 
+  const setImage = (src, rotation) => {
+    const syncDimensions = () => {
+      picture.width = picture.naturalWidth;
+      picture.height = picture.naturalHeight;
+    };
+
+    picture.addEventListener("load", syncDimensions, { once: true });
+    picture.src = src;
+    if (picture.complete) syncDimensions();
+    picture.style.transform = `rotate(${rotation})`;
+  };
+
   document.querySelectorAll("[data-about-image]").forEach((keyword) => {
     const showImage = () => {
       clearTimeout(resetTimer);
-      picture.src = keyword.dataset.aboutImage;
-      picture.style.transform = `rotate(${keyword.dataset.rotation})`;
+      setImage(keyword.dataset.aboutImage, keyword.dataset.rotation);
     };
 
     const resetImage = () => {
       clearTimeout(resetTimer);
       resetTimer = setTimeout(() => {
-        picture.src = defaultImage;
-        picture.style.transform = "rotate(-2deg)";
+        setImage(defaultImage, "-2deg");
       }, 200);
     };
 
