@@ -7,9 +7,26 @@ import tabIcon from "../assets/images/tabIcon.png";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>{title}</title>
+
     <link rel="icon" href={tabIcon.src} type="image/png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={new URL(tabIcon.src, Astro.site).href} />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Personal Website." />
+    <meta name="twitter:image" content={new URL(tabIcon.src, Astro.site).href} />
+
     <link rel="stylesheet" href="/css/styles.css" />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJE8GKHRX6"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -18,6 +35,7 @@ import tabIcon from "../assets/images/tabIcon.png";
       gtag("config", "G-TJE8GKHRX6");
     </script>
   </head>
+
   <body>
     <slot />
     <script src="../scripts/main.js"></script>
